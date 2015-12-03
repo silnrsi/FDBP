@@ -12,3 +12,8 @@ There is no coupling between this page and the front matter weight variables on 
 | 300    | Glyph Construction                         |
 | 400    | Shaping and Rendering                      |
 | 500    | Optimization                               |
+| 600    | Testing                                    |
+| 700    | Production and Distribution                |
+| 800    | Environments                               |
+| 900    | Tools                                      |
+| 1000   | Script-Specific                            |
