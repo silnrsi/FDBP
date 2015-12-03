@@ -4,7 +4,7 @@ redcarpet:
 pygments: false
 permalink: none
 exclude: ["en-US/images/precompressed/", "node_modules", "Gruntfile.js", "package.json"]
-url: http://silnrsi.github.io/FDPB
+url: http://silnrsi.github.io/FDBP
 baseurl: /FDBP
 repourl: //github.com/silnrsi/FDBP
 title: Font Development Best Practice
