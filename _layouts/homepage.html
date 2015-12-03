@@ -1,0 +1,23 @@
+{% include html-start.html %}
+
+	{% include header-masthead.html %}
+
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+
+          <p>{{ content }}</p>
+        </section>
+
+        <aside id="sidebar">
+          <p>This book is free culture, <a href="{{site.repourl}}" target="_blank">hosted on GitHub</a>. Patches, suggestions, and corrections are welcome.</p>
+          <p><a class="editthispage" href="https:{{site.repourl}}/blob/gh-pages{{ page.url | replace: '.html', '.md' }}" target="_blank">Edit this page</a></p></p>
+        </aside>
+
+      </div>
+    </div>
+
+{% include footer.html %}
+
+{% include html-end.html %}

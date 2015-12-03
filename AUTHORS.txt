@@ -1,0 +1,4 @@
+# This file lists authors for copyright purposes
+
+Alan Ward
+SIL International

@@ -1,0 +1,11 @@
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+pygments: false
+permalink: none
+exclude: ["en-US/images/precompressed/", "node_modules", "Gruntfile.js", "package.json"]
+url: http://silnrsi.github.io/fdbp
+baseurl: /fdbp
+repourl: //github.com/silnrsi/fdbp
+title: Font Development Best Practice
+subtitle: A book about how to create great fonts

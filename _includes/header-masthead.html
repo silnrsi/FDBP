@@ -1,0 +1,9 @@
+{% assign urlList = site.pages | map: 'url' %}
+
+<header>
+  <div class="inner">
+    <h1><a href="{{site.baseurl}}/">{{ site.title }}</a></h1>
+    <h2>{{ site.subtitle }}</h2>
+    <a href="{{site.repourl}}" class="button" target="_blank"><small>View project on</small>GitHub</a>
+  </div>
+</header>
