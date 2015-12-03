@@ -9,7 +9,8 @@ title: Introduction
 This book has been produced to document what we think are the best practices to use in font 
 development. They are generally the practices we use.
 
-If you wish to help us, you can contribute to this documentation [on GitHub].  
+If you wish to help us, you can contribute to this documentation [on GitHub]. 
+See README.md for contribution instructions.
 
 *&mdash; The Font Development Best Practice Contributors*
 
