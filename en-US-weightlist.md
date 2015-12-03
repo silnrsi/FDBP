@@ -1,3 +1,6 @@
+This info is only for documentation. Please **update** it if new pages are added.
+There is no coupling between this page and the front matter weight variables on the pages.
+
 | Weight | Page                                       |
 |--------|--------------------------------------------|
 | 0      | Index                                      |
