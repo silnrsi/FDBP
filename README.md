@@ -1,8 +1,6 @@
 # FDBP
 Font Development Best Practice documentation
 
-Derived from [Design With FontForge] on [GitHub]
-
 To contribute, edit the GitHub Flavored Markdown pages in the en-US folder. 
 This can be done several ways:
 - Clone the repo, then edit the files with a text editor and push them.
@@ -19,6 +17,8 @@ weight, title, and possibly category.
 
 If you contribute, add your name to AUTHORS.txt. The structure Victor indicated can be found
 at the bottom of this Google [Doc](https://docs.google.com/document/d/1F0K-oYRw6ZqHvM1TT2k0_CkQuv-pJqvRQgQXNUb02IA/edit#heading=h.zhldii2y6sjb)
+
+We gratefully acknowledge this site was derived from [Design With FontForge] on [GitHub].
 
 [Design With FontForge]: http://designwithfontforge
 [GitHub]: https://github.com/fontforge/designwithfontforge.com
