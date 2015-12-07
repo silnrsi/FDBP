@@ -3,10 +3,11 @@ published: true
 layout: bookpage
 weight: 3
 category: Before You Begin
-title: What Is A Font?
+title: What Is A Font? (example GFM page)
 ---
 
-**This page is retained from *Designing With FontForge* as an example of a complex page.**
+**This page is retained from *Designing With FontForge* as an example of a complex page. 
+It probably shouldn't be changed.**
 
 &mdash; What makes typefaces different from hand-writing, calligraphy, lettering, and logos?
 
