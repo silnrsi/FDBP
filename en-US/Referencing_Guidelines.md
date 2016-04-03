@@ -1,3 +1,11 @@
+---
+published: true
+layout: bookpage
+weight: 2
+category: Introduction
+title: Referencing Guidelines
+---
+
 Whenever reasonable and appropriate, this book should reference sources, and fully respect the copyright and licensing that applies to content, and the moral rights of the author.
 
 When the source is a web page, and no information is reproduced verbatim, a link to the web page is usually sufficient. The preferred style for linking is to insert links using reference names within the text, then complete references at the bottom of the page, as in:
