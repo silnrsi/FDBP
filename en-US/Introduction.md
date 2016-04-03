@@ -2,7 +2,7 @@
 published: true
 layout: bookpage
 weight: 1
-category: Before You Begin
+category: Introduction
 title: Introduction
 ---
 
