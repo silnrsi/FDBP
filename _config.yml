@@ -5,5 +5,5 @@ exclude: ["en-US/images/precompressed/", "node_modules", "Gruntfile.js", "packag
 url: http://silnrsi.github.io/FDBP
 baseurl: /FDBP
 repourl: //github.com/silnrsi/FDBP
-title: Font Development Best Practice
-subtitle: A book about how to create great fonts
+title: Font Development Best Practices
+subtitle: Technical guidance regarding font development and production
