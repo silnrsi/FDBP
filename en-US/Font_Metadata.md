@@ -6,4 +6,4 @@ category: Font Metadata
 title: Font Metadata
 ---
 
-Place holder for Font Metadata info
+This chapter will contain guidance on font naming, versioning and line metrics.

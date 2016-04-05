@@ -6,4 +6,4 @@ category: Testing
 title: Testing
 ---
 
-Place holder for Testing info
+This chapter will contain guidance on techniques and tools to test font inventory, design, metrics, rendering, and integrity.

@@ -6,4 +6,4 @@ category: Environments
 title: Environments
 ---
 
-Place holder for Environments info
+This chapter will contain guidance on issues relevant to specific operating systems and environments: Windows, Linux, Mac OS X, iOS, Android, web and others.

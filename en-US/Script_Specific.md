@@ -6,4 +6,4 @@ category: Script-Specific
 title: Script-Specific
 ---
 
-Place holder for Script-Specific info
+This chapter will contain guidance on developing fonts for specific scripts and writing systems.

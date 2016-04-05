@@ -6,4 +6,4 @@ category: Glyph Metadata
 title: Glyph Metadata
 ---
 
-Place holder for Glyph Metadata info
+This chapter will contain guidance on glyph naming, encoding and ordering. It will also recommend a minimum set of glyphs that should be present in all fonts, Latin or non-Latin.  

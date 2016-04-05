@@ -6,4 +6,4 @@ category: Shaping and Rendering
 title: Shaping and Rendering
 ---
 
-Place holder for Shaping and Rendering info
+This chapter will contain guidance on OpenType, Graphite and related shaping engines.

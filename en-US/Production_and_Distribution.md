@@ -6,4 +6,4 @@ category: Production and Distribution
 title: Production and Distribution
 ---
 
-## Place holder for Production and Distribution info created using Prose.io
+This chapter will contain guidance on source code management, release package structures, copyright, licensing, and building and packaging tools.

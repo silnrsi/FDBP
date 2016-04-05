@@ -6,4 +6,4 @@ category: Optimization
 title: Optimization
 ---
 
-## Place holder for Optimization info created using Prose.io
+This chapter will contain guidance on font optimization, such as hinting, compression, subsetting, and tuning (with TypeTuner).

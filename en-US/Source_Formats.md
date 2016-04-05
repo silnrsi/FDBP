@@ -12,6 +12,7 @@ Although many font tools can use these end-user formats as source for derivative
 
 **We recommend that new font projects avoid these proprietary formats and instead adopt an open, platform-neutral standard: [UFO (Unified Font Objects)][UFO].** UFO is a public, human-readable, text-based source format for storing font source data. It's now being used by many foundries, including Adobe, as their primary source format. [Read more about using UFO](UFO.html).
 
+This chapter will also cover relevant issues for other source formats.
 
 [OpenType]: https://en.wikipedia.org/wiki/OpenType
 [UFO]: http://unifiedfontobject.org/

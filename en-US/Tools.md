@@ -6,4 +6,4 @@ category: Tools
 title: Tools
 ---
 
-Place holder for Tools info
+This chapter will contain guidance specific to certain design and production tools: FontLab, Glyphs, FontForge, AFDKO, Font Tools, pysilfont and others.
