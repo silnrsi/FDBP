@@ -51,12 +51,12 @@ table {
 
 /* LAYOUT STYLES */
 body {
-  font-size: 17px;
-  line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.3;
   background: #FAFAFA url(../images/body-bg.jpg) 0 0 repeat;
   font-family: 'Gentium Book Basic', serif;
   font-weight: 400;
-  color: #343434;
+  color: #333333;
   margin-bottom: 40px;
 }
 
@@ -67,7 +67,7 @@ body > div, footer {
 
 @media (min-width: 1170px) {
   body {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 
@@ -87,8 +87,8 @@ a:hover, #main-content a:hover h3 {
 }
 
 header {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: 'Julius Sans One', 'Helvetica Neue', Helvetica, Arial, serif;
   background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
   border-bottom: solid 1px #275da1;
@@ -97,7 +97,7 @@ header {
 
 header h1 {
   letter-spacing: -1px;
-  font-size: 32px;
+  font-size: 26px;
   color: #fff;
   line-height: 1.1;
   margin-bottom: 0.1em;
@@ -285,7 +285,7 @@ code, pre {
   text-shadow: none;
   padding: 5px;
   border-radius: 5px;
-  font-size: 0.75em;
+  font-size: 1em;
   white-space: pre;
   max-width: 100%;
 }
@@ -484,7 +484,7 @@ blockquote {
   font-size: 1.0em;
   border-left: 10px solid #e9e9e9;
   margin-bottom: 20px;
-  padding: 0 0 0 30px;
+  padding: 0 0 0 25px;
 }
 
 img {
@@ -550,10 +550,10 @@ footer a {
     width: 340px;
   }
   header h1 {
-    font-size: 60px;
+    font-size: 36px;
   }
   header h2 {
-    font-size: 30px;
+    font-size: 24px;
   }
   #main-content {
     width: 490px;
