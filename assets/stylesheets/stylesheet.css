@@ -87,8 +87,8 @@ a:hover, #main-content a:hover h3 {
 }
 
 header {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-family: 'Julius Sans One', 'Helvetica Neue', Helvetica, Arial, serif;
   background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
   border-bottom: solid 1px #275da1;
@@ -97,11 +97,11 @@ header {
 
 header h1 {
   letter-spacing: -1px;
-  font-size: 72px;
+  font-size: 36px;
   color: #fff;
   line-height: 1.1;
   margin-bottom: 0.1em;
-  margin-top: 0.63em; 
+  margin-top: 0.33em;
   width: 540px;
 }
 
@@ -329,7 +329,7 @@ th {
 
 td {
   border: 1px solid #ebebeb;
-  text-align: center;
+  text-align: left;
   font-weight: 400;
 }
 
@@ -353,7 +353,7 @@ b, strong {
 /* GENERAL ELEMENT TYPE STYLES */
 
 #main-content h1 {
-  font-size: 2.6em;
+  font-size: 2.2em;
   letter-spacing: -2px;
   margin-bottom: .375em;
   margin-top: 1em;
@@ -481,7 +481,7 @@ p a {
 }
 
 blockquote {
-  font-size: 1.6em;
+  font-size: 1.0em;
   border-left: 10px solid #e9e9e9;
   margin-bottom: 20px;
   padding: 0 0 0 30px;
@@ -684,7 +684,7 @@ ol.rectangle-list a {
   transition: all .3s ease-out;
 }
 
-ol.rectangle-list a.active, 
+ol.rectangle-list a.active,
 ol.rectangle-list a:hover {
   background: #2e78cc;
   color: #fff;
