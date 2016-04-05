@@ -39,8 +39,8 @@ In addition to these visual design programs there are other applications and uti
 
 - [The Adobe Font Development Kit for OpenType][AFDKO]
 - [Smith]
-- [TypeSupply]
-- [pysilfont] 
+- [Tools from TypeSupply][TypeSupply]
+- [pysilfont]
 
 ## Example projects
 

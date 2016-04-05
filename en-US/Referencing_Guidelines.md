@@ -24,10 +24,10 @@ According to the [OpenType] Specification...
 [OpenType]: https://www.microsoft.com/typography/otspec/
 ~~~
 
-A link to another page in this book looks like this:
+A link to another page in this book looks like this (note the .html extension):
 
 ~~~
-Read more of our [recommendations regarding OpenType](OpenType.md)
+Read more about [OpenType](OpenType.html)
 ~~~
 
 If the information is a direct quote, or the source is not a web page, then a formal reference is needed. The formal referencing style is a footnote-based system. If a reference is needed, insert a footnote reference `[^1]` into the text, then add the reference details at the bottom of the page, as in `[^1]: This is the reference.` The full reference should be formatted according to the [MHRA Style Guide][MHRA].
