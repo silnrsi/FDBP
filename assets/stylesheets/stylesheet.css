@@ -126,7 +126,7 @@ header h2 {
 .inner {
   position: relative;
   width: 940px;
-  margin: 1.55em auto;
+  margin: 0.67em auto;
 }
 
 @media (min-width: 1170px) {
@@ -283,9 +283,9 @@ code, pre {
   background-color: #e6edf0;
   overflow: auto;
   text-shadow: none;
-  padding: 5px;
+  padding: 4px;
   border-radius: 5px;
-  font-size: .8em;
+  font-size: .67em;
   white-space: pre;
   max-width: 100%;
 }
@@ -321,6 +321,8 @@ hr {
 table {
   width: 100%;
   border: 1px solid #ebebeb;
+  font-size: 0.8em;
+  margin-bottom: 1em;
 }
 
 th {
@@ -353,7 +355,7 @@ b, strong {
 /* GENERAL ELEMENT TYPE STYLES */
 
 #main-content h1 {
-  font-size: 2.2em;
+  font-size: 1.6em;
   letter-spacing: -2px;
   margin-bottom: .375em;
   margin-top: 0em;
@@ -368,7 +370,7 @@ b, strong {
 }
 
 #main-content h2 {
-  font-size: 1.6em;
+  font-size: 1.3em;
   margin-bottom: .6em;
   margin-top: 1em;
   color: #272727;
@@ -381,7 +383,7 @@ b, strong {
 }
 
 #main-content h3 {
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-top: 1em;
   margin-bottom: .6em;
   color: #272727;
@@ -481,10 +483,10 @@ p a {
 }
 
 blockquote {
-  font-size: 1.0em;
+  font-size: 0.85em;
   border-left: 10px solid #e9e9e9;
   margin-bottom: 20px;
-  padding: 0 0 0 25px;
+  padding: 0 0 0 20px;
 }
 
 img {
