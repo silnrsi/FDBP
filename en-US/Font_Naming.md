@@ -6,7 +6,7 @@ category: Font Metadata
 title: Font Naming
 ---
 
-Fonts typically have two names by which they're identified: the internal font names that appear in application menus and the font filename. **These two names should be synchronized in a particular way.**
+Fonts typically have two names by which they're identified: the internal font name that appears in application menus and the font filename. **These two names should be synchronized in a particular way.**
 
 ## Internal font names
 
@@ -14,7 +14,7 @@ The most effective font names (those seen in application menus, etc.) have a few
 
 - They are unique to the particular font family.
 - They do not include "Unicode", as most fonts are Unicode-encoded. If the font is _not_ Unicode-encoded, then an indication of that may be added to the name, as in "Anaconda L" (for legacy).
-- They do not include specific script or language names. If a font family has multiple language-specific versions, the some indication of the language (such as an Ethnologue code), may be added, as in "Anaconda GDX".
+- They do not include specific script or language names. If a font family has multiple language-specific versions, then some indication of the language (such as an Ethnologue code), may be added, as in "Anaconda GDX".
 - They may include spaces, but not numerals or any punctuation. There are some rare situations in which numbers can cause technical problems.
 
 ## Font filenames
