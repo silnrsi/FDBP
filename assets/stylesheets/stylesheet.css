@@ -358,7 +358,7 @@ b, strong {
   letter-spacing: 0px;
   margin-bottom: .375em;
   margin-top: 0em;
-  color: #272727;
+  color: #2879d0;
 }
 
 #main-content h1:before {
@@ -372,7 +372,7 @@ b, strong {
   font-size: 1.3em;
   margin-bottom: .6em;
   margin-top: 1em;
-  color: #272727;
+  color: #2879d0;
 }
 #main-content h2:before {
   content: "»";
@@ -385,7 +385,7 @@ b, strong {
   font-size: 1.1em;
   margin-top: 1em;
   margin-bottom: .6em;
-  color: #272727;
+  color: #2879d0;
 }
 
 /*
@@ -400,7 +400,7 @@ b, strong {
 #main-content h4 {
   font-size: 1em;
   margin-bottom: .4em;
-  color: #272727;
+  color: #2879d0;
   margin-top: 2.5em;
 }
 
@@ -415,7 +415,7 @@ h4:not(.quiet):before {
 
 #main-content h5 {
   font-size: 14px;
-  color: #272727;
+  color: #2879d0;
 }
 /*
 h5:before {
@@ -428,7 +428,7 @@ h5:before {
 
 #main-content h6 {
   font-size: .8em;
-  color: #272727;
+  color: #2879d0;
 }
 /*
 h6:before {
