@@ -30,7 +30,7 @@ It can be very helpful to add a URL or domain to the copyright holder, as in:
 
 **The copyright statement(s) should be in at least two places in the font package, the font internal copyright field and the separate user documentation.**
 
-The internal copyright field is a specific entry (ID 0) in the font's `name` table, and all font design packages provide an interface for entering it.
+The internal copyright field is stored inside the font file, and font design packages provide an interface for entering it, usually in Font Info. Technically, this information is stored in the font's `name` table, in the entry with ID = 0.
 
 The same copyright statement(s) should also be in the font package documentation, typically in a LICENSE or ReadMe file. **For OFL-licensed fonts this should be at the very top of the OFL.txt file.**
 

@@ -14,7 +14,7 @@ The most effective font names (those seen in application menus, etc.) have a few
 
 - They are unique to the particular font family.
 - They do not include "Unicode", as most fonts are Unicode-encoded. If the font is _not_ Unicode-encoded, then an indication of that may be added to the name, as in "Anaconda L" (for legacy).
-- They do not include specific script or language names. If a font family has multiple language-specific versions, then some indication of the language (such as an Ethnologue code), may be added, as in "Anaconda GDX".
+- They do not include specific script or language names. If a font family has multiple language-specific versions, then some indication of the language (such as an [Ethnologue] code), may be added, as in "Anaconda GDX".
 - They may include spaces, but not numerals or any punctuation. There are some rare situations in which numbers can cause technical problems.
 
 ## Font filenames
@@ -38,7 +38,11 @@ For example, say the "Anaconda Pro" font family has four upright weights (Light,
 - Anaconda Pro Light - Bold  _(designed as Anaconda Pro - Semibold)_
 - Anaconda Pro Light - Bold Italic  _(designed as Anaconda Pro - Semibold Italic)_
 
+
 - Anaconda Pro - Regular  _(designed as Anaconda Pro - Regular)_
 - Anaconda Pro - Italic  _(designed as Anaconda Pro - Italic)_
 - Anaconda Pro - Bold  _(designed as Anaconda Pro - Bold)_
 - Anaconda Pro - Bold Italic  _(designed as Anaconda Pro - Bold Italic)_
+
+
+[Ethnologue]: http://www.ethnologue.com/
