@@ -19,8 +19,7 @@ One tool is the python script UFObuildComp.py found in pysilfont. It accepts a l
 
 The format of the composite definition is:
 
-```
-# everything after # is a comment
+```# everything after # is a comment
 result = base1 & base2         # two bases
 result = base + diacritic@AP   # base plus diacritic (at attachment point)
 result = base + diac1@AP + diac2@AP # diac2 attaches to diac1
