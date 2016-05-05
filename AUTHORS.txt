@@ -1,4 +1,5 @@
 # This file lists authors
 
 Victor Gaultney
+David Rowe
 Alan Ward
