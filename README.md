@@ -6,7 +6,7 @@ General Info
 - The GFM pages are in the en-US folder.
 - The current pages are all placeholders which need to be filled out.
 
-To contribute, edit the GitHub Flavored Markdown pages in the en-US folder. 
+To contribute, edit the GitHub Flavored Markdown pages in the en-US folder.
 This can be done several ways:
 - Clone the repo, then edit the files with a text editor and push them.
 - Use the GitHub web editor.
@@ -15,15 +15,15 @@ You will need to use the prose.io interface to add that service as an authorized
 
 A page can be added by adding a file to the en-US directory.
 - Do not use spaces in the file name.
-- Copy the front matter (between the triple hyphens) from another file and update the 
+- Copy the front matter (between the triple hyphens) from another file and update the
 weight, title, and possibly category.
-- New pages will generally use a category that’s already in use. 
+- New pages will generally use a category that’s already in use.
 - Add the page title and weight to en-US-weightlist.md.
 
 If you contribute, add your name to AUTHORS.txt. The structure Victor indicated can be found
-at the bottom of this Google [Doc](https://docs.google.com/document/d/1F0K-oYRw6ZqHvM1TT2k0_CkQuv-pJqvRQgQXNUb02IA/edit#heading=h.zhldii2y6sjb). New pages probably aren’t needed for topics below the top level -- at least not until a placeholder page gets too full. 
+at the bottom of this Google [Doc](https://docs.google.com/document/d/1F0K-oYRw6ZqHvM1TT2k0_CkQuv-pJqvRQgQXNUb02IA/edit#heading=h.zhldii2y6sjb). New pages probably aren’t needed for topics below the top level -- at least not until a placeholder page gets too full.
 
-We gratefully acknowledge this site was derived from [Design With FontForge] on [GitHub]. The [_What Is A Font_](https://silnrsi.github.io/FDBP/en-US/What_Is_a_Font.html) page was retained from there as an example of a complex page.
+We gratefully acknowledge this site is modeled on [Design With FontForge] on [GitHub].
 
-[Design With FontForge]: http://designwithfontforge
+[Design With FontForge]: http://designwithfontforge.com
 [GitHub]: https://github.com/fontforge/designwithfontforge.com
