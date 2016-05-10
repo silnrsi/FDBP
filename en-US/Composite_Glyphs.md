@@ -6,8 +6,6 @@ category: Composite Glyphs
 title: Composite Glyphs
 ---
 
-This section will contain information on creating composite glyphs.
-
-Composite glyphs are composed of one or more other glyphs, rather than having contours to define their shape. For example, the glyph for a vowel with an acute accent can be composed of the glyph for the base vowel plus the glyph for the acute accent, rather than repeating the contour information for the base vowel and the acute accent.
+Composite glyphs are made by referencing one or more other glyphs in the font. For example, the glyph for "é" can be composed of the glyph for the letter "e" (as the base) and the glyph for the acute accent (as the diacritic, or mark). Using composite glyphs saves design time by not requiring that each base and diacritic combination be drawn separately. It can also improve consistency since there is only one copy of the acute accent which is referenced by every glyph that needs it.
 
 One format for describing composites uses a single line to define the resulting glyph as a combination of other glyphs. The tool described in [Composite Tools](Composite_Tools.html) uses this format.
