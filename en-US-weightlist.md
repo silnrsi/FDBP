@@ -16,7 +16,7 @@ Pages proceeded by --- are intended future additions
 | 80     | --- Other Application Formats              |
 | 100    | Font Metadata                              |
 | 110    | Font Naming                                |
-| 120    | --- Versioning                             |
+| 120    | Versioning                                 |
 | 130    | Design Metrics                             |
 | 140    | Font Metrics                               |
 | 200    | Glyph Metadata                             |
