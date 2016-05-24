@@ -10,7 +10,7 @@ General Info
 
 To contribute, edit the GitHub Flavored Markdown pages in the en-US folder.
 This can be done several ways:
-- Clone the repo, then edit the files with a text editor and push them. (See [Previewing your changes locally] (https://github.com/silnrsi/FDBP/blob/gh-pages/README.md#previewing-your-changes-locally) for previewing the site or consider a markdown editor such as [Geany] for previewing content)
+- Clone the repo, then edit the files with a text editor and push them. (See [Previewing your changes locally] (https://github.com/silnrsi/FDBP#previewing-your-changes-locally) for previewing the site or consider a markdown editor such as [Geany] for previewing content)
 - Use the GitHub web editor.
 - Use [prose.io/#silnrsi/FDBP](http://prose.io/#silnrsi/FDBP), which provides a GUI-like interface for GFM.
 You will need to use the prose.io interface to add that service as an authorized app on your GitHub account.
