@@ -10,7 +10,7 @@ General Info
 
 To contribute, edit the GitHub Flavored Markdown pages in the en-US folder.
 This can be done several ways:
-- Clone the repo, then edit the files with a text editor and push them.
+- Clone the repo, then edit the files with a text editor and push them. (See [Previewing your changes locally] (https://github.com/silnrsi/FDBP/blob/gh-pages/README.md#previewing-your-changes-locally) for previewing the site or consider a markdown editor such as [Geany] for previewing content)
 - Use the GitHub web editor.
 - Use [prose.io/#silnrsi/FDBP](http://prose.io/#silnrsi/FDBP), which provides a GUI-like interface for GFM.
 You will need to use the prose.io interface to add that service as an authorized app on your GitHub account.
@@ -28,20 +28,18 @@ at the bottom of this Google [Doc](https://docs.google.com/document/d/1F0K-oYRw6
 ### Previewing your changes locally
 To see your working copy of the site served locally in your browser cd into your working dir and type:
 ```
-> jekyll serve
+jekyll serve
 ```
-and point your browser at the URL (replace 0.0.0.0 with localhost if the URL contains that).
+and point your browser at the URL (replace 0.0.0.0 with localhost if the URL contains that) which jekyll prints out
 #### Installing jekyll
 
-**Windows:** This guide explains how [Easily install Jekyll on Windows]
-
-**Linux:** Install the jekyll package using your package manager, for example on Debian based operating systems 
-```
-sudo apt-get install jekyll
-```
+**Windows:** This guide explains how [Easily install Jekyll on Windows]  
+**Linux:** Install the jekyll package using your package manager, for example on Debian based operating systems  
+`sudo apt-get install jekyll`
 
 We gratefully acknowledge this site is modeled on [Design With FontForge] on [GitHub].
 
 [Design With FontForge]: http://designwithfontforge.com
 [GitHub]: https://github.com/fontforge/designwithfontforge.com
 [Easily install Jekyll on Windows]: https://davidburela.wordpress.com/2015/11/28/easily-install-jekyll-on-windows-with-3-command-prompt-entries-and-chocolatey/
+[Geany]: https://www.geany.org/
