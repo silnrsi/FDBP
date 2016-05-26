@@ -1,5 +1,6 @@
 # This file lists authors
 
+Bobby de Vos
 Victor Gaultney
 David Rowe
 Alan Ward
