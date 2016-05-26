@@ -47,9 +47,9 @@ defines the glyph ```LtnSmECircumDotBlw``` (Latin small letter e with circumflex
 
 Example (3):
 
-```
-LtnCapACircumGrave = LtnCapA + CombCircum@U + CombGrave@U |1EA6
-LtnCapACircumGrave.VN = LtnCapA + CombCircumGrave.VN@U```
+```LtnCapACircumGrave = LtnCapA + CombCircum@U + CombGrave@U |1EA6```
+
+```LtnCapACircumGrave.VN = LtnCapA + CombCircumGrave.VN@U```
 
 The first line defines the glyph ```LtnCapACircumGrave``` (Latin capital letter A with circumflex and grave) as being composed of the glyph ```LtnCapA``` (Latin capital letter A) with the glyph ```CombCircum``` (Combining circumflex) placed over the ```LtnCapA``` glyph at attachment point ```U``` and with the glyph ```CombGrave``` (Combining grave) placed over the preceding glyph ```CombCircum``` (since the default action is to attach to the immediately preceding glyph) and using the attachment point of that glyph. So, in addition to having an attachment point ```_U``` which is used to attach to the base glyph, the Combining circumflex also has a ```U``` attachment point to which the Combining grave glyph attaches. The resulting glyph is assigned the Unicode value U+1EA6.
 
