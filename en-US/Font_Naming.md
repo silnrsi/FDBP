@@ -31,14 +31,14 @@ Here the spaces are removed in the family and style names. The Bold Italic weigh
 
 Some applications and operating systems can handle complex font families with many weights, however many still do not, and trying to coordinate a well-functioning family across multiple platforms is a technical nightmare. **Best practice is that font families should normally be grouped in sets of four that correspond to Regular, Italic, Bold, and Bold Italic weights. If a design has more than four weights/styles, it is best to split them into separate groups of two or four and change the main font name for each group.**
 
-For example, say the "Anaconda Pro" font family has four upright weights (Light, Regular, Semibold, Bold) and four corresponding italic faces. The most trouble-free way to deliver these would be as two separate font families:
+For example, say the "Anaconda Pro" font family has four upright weights (Light, Regular, Semibold, Bold) and four corresponding italic faces. The most trouble-free way to deliver these would be as two separate font families, Anaconda Pro Light:
 
 - Anaconda Pro Light - Regular  _(designed as Anaconda Pro - Light)_
 - Anaconda Pro Light - Italic  _(designed as Anaconda Pro - Light Italic)_
 - Anaconda Pro Light - Bold  _(designed as Anaconda Pro - Semibold)_
 - Anaconda Pro Light - Bold Italic  _(designed as Anaconda Pro - Semibold Italic)_
 
-
+and Anaconda Pro:
 
 - Anaconda Pro - Regular  _(designed as Anaconda Pro - Regular)_
 - Anaconda Pro - Italic  _(designed as Anaconda Pro - Italic)_
