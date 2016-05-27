@@ -45,5 +45,9 @@ and Anaconda Pro:
 - Anaconda Pro - Bold  _(designed as Anaconda Pro - Bold)_
 - Anaconda Pro - Bold Italic  _(designed as Anaconda Pro - Bold Italic)_
 
+## References
+
+[ScriptSource blog post regarding font naming recommendations]
 
 [Ethnologue]: http://www.ethnologue.com/
+[ScriptSource blog post regarding font naming recommendations]: http://scriptsource.org/cms/scripts/page.php?item_id=entry_detail&uid=k7dwx5fhnz
