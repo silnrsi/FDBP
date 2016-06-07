@@ -9,11 +9,17 @@ On [ScriptSource][OTinfo on SS] there is information on where to find copies of 
 
 ## Lookup Orders
 
+(check the "Lookup orders" section in the "Font Construction Best Practices" google doc for relevant information)
+
 ## Language Tags
+
+(is the "OpenType language tag issues" section in the "Font Construction Best Practices" google doc relevant?)
 
 ## Feature Tags
 
 The OpenType specification provides for Layout Feature tables, each of which is identified by a 4-character tag.
+
+(is the "Selecting tags for features" section in the "Font Construction Best Practices" google doc relevant?)
 
 ## Stylistic Sets and Character Variants
 
@@ -27,6 +33,9 @@ According to the OT spec, Character Variants (cvxx tags) should be preferred whe
 - There are only 20 registered ssxx features, but 99 cvxx features.
 - Some apps (MS Word for example) assume that users would need to turn on only one ssxx feature at a time.
 - Not as many apps support cvxx [yet].
+
+(is the "GSUB only" section in the "Font Construction Best Practices" google doc relevant?)
+
 
 [OTinfo on SS][http://scriptsource.org/cms/scripts/page.php?item_id=entry_detail&uid=kr5s6gwpdy]
 
