@@ -25,18 +25,27 @@ weight, title, and possibly category.
 If you contribute, add your name to AUTHORS.txt. The structure Victor indicated can be found
 at the bottom of this Google [Doc](https://docs.google.com/document/d/1F0K-oYRw6ZqHvM1TT2k0_CkQuv-pJqvRQgQXNUb02IA/edit#heading=h.zhldii2y6sjb). New pages probably aren’t needed for topics below the top level -- at least not until a placeholder page gets too full.
 
-### Previewing your changes locally
-To see your working copy of the site served locally in your browser cd into your working dir and type:
+## Previewing your changes locally
+To see your working copy of the site served locally in your browser, start a command window, change to the directory containing the repository (using the `cd` command) and start the jekyll server. For example:
 ```
+cd /home/hyde/FDBP
 jekyll serve
 ```
-and point your browser at the URL (replace 0.0.0.0 with localhost if the URL contains that) which jekyll prints out
-#### Installing jekyll
+then point your browser at the URL which jekyll prints out (something like http://127.0.0.1:4000/FDBP/, for example).
+You may be able to substitute 'localhost' for '127.0.0.1' in the URL.
 
-**Windows:** This guide explains how [Easily install Jekyll on Windows]  
-**Linux:** Install the jekyll package using your package manager, for example on Debian based operating systems  
+This assumes you have jekyll installed already.
+
+### Installing jekyll
+
+**Windows:** This guide explains how to [Easily install Jekyll on Windows]  
+**Linux:** Install the jekyll package using your package manager, for example on Debian based operating systems
+
 `sudo apt-get install jekyll`
 
+Ensure that you have jekyll version 2 or later.
+
+## Acknowledgements
 We gratefully acknowledge this site is modeled on [Design With FontForge] on [GitHub].
 
 [Design With FontForge]: http://designwithfontforge.com
