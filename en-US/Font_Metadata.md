@@ -2,6 +2,7 @@
 published: true
 layout: bookpage
 weight: 100
+outlevel: 3
 category: Font Metadata
 title: Font Metadata
 ---

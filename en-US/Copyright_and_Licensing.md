@@ -2,6 +2,7 @@
 published: true
 layout: bookpage
 weight: 790
+outlevel: 9.9
 category: Production and Distribution
 title: Copyright and Licensing
 ---

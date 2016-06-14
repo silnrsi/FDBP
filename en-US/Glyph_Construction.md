@@ -2,6 +2,7 @@
 published: true
 layout: bookpage
 weight: 300
+outlevel: 5
 category: Glyph Construction
 title: Glyph Construction
 ---

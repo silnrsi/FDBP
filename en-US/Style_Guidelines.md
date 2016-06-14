@@ -2,6 +2,7 @@
 published: true
 layout: bookpage
 weight: 3
+outlevel: 1.2
 category: Introduction
 title: Style Guidelines
 ---

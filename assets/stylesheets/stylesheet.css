@@ -658,6 +658,7 @@ ul.breadcrumb li {
 
 ol.rectangle-list li {
   list-style: none;
+  height: 2em;
 }
 
 .rectangle-list {
@@ -674,12 +675,12 @@ ol.rectangle-list ol {
 
 ol.rectangle-list a {
   position: relative;
-  display: block;
+/*  display: block;*/
   padding: .4em .4em .4em .8em;
   *padding: .4em;
   margin: .5em 0 .5em 2.5em;
-  background: #d6dce0;
-  color: #222;
+/*  background: #d6dce0;
+  color: #222; */
   text-decoration: none;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
@@ -692,7 +693,7 @@ ol.rectangle-list a:hover {
 }
 
 ol.rectangle-list a:before{
-  content: counter(li);
+/*  content: counter(li); */
   counter-increment: li;
   position: absolute;
   left: -2.5em;
@@ -720,6 +721,14 @@ ol.rectangle-list a:after{
 ol.rectangle-list a:hover:after{
   left: -.5em;
   border-left-color: #2e78cd;
+}
+
+.outlevel {
+  color: #000000;
+  display: block;
+  float: left;
+  clear: left;
+  width: 15px;
 }
 th, td {
   padding: 0.5em;

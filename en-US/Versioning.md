@@ -2,6 +2,7 @@
 published: true
 layout: bookpage
 weight: 120
+outlevel: 3.2
 category: Font Metadata
 title: Versioning
 ---

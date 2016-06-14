@@ -2,6 +2,7 @@
 published: true
 layout: bookpage
 weight: 340
+outlevel: 5.4
 category: Composite Glyphs
 title: Composite Glyphs
 ---

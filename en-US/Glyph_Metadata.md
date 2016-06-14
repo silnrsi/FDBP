@@ -2,6 +2,7 @@
 published: true
 layout: bookpage
 weight: 200
+outlevel: 4
 category: Glyph Metadata
 title: Glyph Metadata
 ---

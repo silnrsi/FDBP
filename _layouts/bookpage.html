@@ -7,7 +7,7 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h1>{{ page.title }}</h1>
+          <h1>{{page.outlevel}} {{ page.title }}</h1>
           {{ content }}
           <nav id="post-nav" class="clearfix">
             {% for p in pageList reversed %}
@@ -65,6 +65,9 @@
             {% for p in pageList %}
               {% if p.path contains 'en-US' and p.title != {{site.title}} %}
                 <li>
+                  <span class="outlevel">
+                    {{ p.outlevel }}
+                  </span>
                   <a {% if p.url == page.url %}class="active"{% endif %} href="{{site.baseurl}}{{p.url}}">
                     {{ p.title }}
                   </a>

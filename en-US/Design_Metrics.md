@@ -2,6 +2,7 @@
 published: true
 layout: bookpage
 weight: 130
+outlevel: 3.3
 category: Font Metadata
 title: Design Metrics
 ---
