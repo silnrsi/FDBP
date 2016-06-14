@@ -15,7 +15,7 @@ This is not intended to be a comprehensive encyclopedia of information, nor to c
 It is very much a work in progress. If you wish to help us, you can contribute to this documentation [on GitHub].
 See README.md for contribution instructions.
 
-*&mdash; The Font Development Best Practices Contributors, all of whom so far are members of SIL International's Non-Roman Script Initiative team, though we'd love to welcome a broader set of [authors]*
+*&mdash; The Font Development Best Practices [Contributors] (initially members of SIL International's Non-Roman Script Initiative team, with a broader set of authors welcome)*
 
 [on GitHub]: {{site.repourl}}
-[authors]: https://github.com/silnrsi/FDBP/blob/gh-pages/AUTHORS.txt
+[Contributors]: https://github.com/silnrsi/FDBP/blob/gh-pages/AUTHORS.txt
