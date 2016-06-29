@@ -2,7 +2,7 @@
 published: true
 layout: homepage
 weight: 0
-title: Font Development Best Practice
+title: Font Development Best Practices
 ---
 
 <ol class="rectangle-list">
