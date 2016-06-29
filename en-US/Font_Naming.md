@@ -22,9 +22,9 @@ The most effective font names (those seen in application menus, etc.) have a few
 
 An individual font file is typically no different from other files in an operating system, and is (for the most part) only bound by the limitations on legal names in that operating system. **However there is a pattern of font file naming that has become reasonably common, and that we recommend:**
 
-> _FontFamilyName_-_StyleName_.otf
+> FontFamilyName-StyleName.otf
 
-Here the spaces are removed in the family and style names. The Bold Italic weight of "Source Sans Pro" would be named:
+Here the spaces are removed in the family name and between any weight or style names, then a single hyphen is placed between the two. For example, the Bold Italic weight of "Source Sans Pro" would be named:
 
 > SourceSansPro-BoldItalic.otf
 
