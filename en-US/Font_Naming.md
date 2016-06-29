@@ -28,6 +28,10 @@ Here the spaces are removed in the family name and between any weight or style n
 
 > SourceSansPro-BoldItalic.otf
 
+Note that even if there is only one weight in the family, that weight should be included in the font filename, for example:
+
+> Lateef-Regular.ttf
+
 ## Font families
 
 Some applications and operating systems can handle complex font families with many weights, however many still do not, and trying to coordinate a well-functioning family across multiple platforms is a technical nightmare. **Best practice is that font families should normally be grouped in sets of four that correspond to Regular, Italic, Bold, and Bold Italic weights. If a design has more than four weights/styles, it is best to split them into separate groups of two or four and change the main font name for each group.**
