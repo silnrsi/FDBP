@@ -28,7 +28,7 @@ Here the spaces are removed in the family name and between any weight or style n
 
 > SourceSansPro-BoldItalic.otf
 
-Note that even if there is only one weight in the family, that weight should be included in the font filename, for example:
+Note that even if there is only one style in the family, that style should be included in the font filename, for example:
 
 > Lateef-Regular.ttf
 
