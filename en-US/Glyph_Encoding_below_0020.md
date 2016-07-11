@@ -47,7 +47,8 @@ For Fontlab Studio, follow these steps:
 
 ## VOLT
 
-If the project uses VOLT then the VOLT project (`.vtp` file) may be overriding the encoding of these first few glyphs, e.g.,:
+If the project uses Microsoft VOLT then the VOLT project (`.vtp` file) may be overriding the encoding of these first few glyphs, e.g.,:
+
 ```
 DEF_GLYPH ".notdef" ID 0 TYPE BASE END_GLYPH
 DEF_GLYPH ".null" ID 1 UNICODE 0 TYPE BASE END_GLYPH
@@ -55,6 +56,7 @@ DEF_GLYPH "nonmarkingreturn" ID 2 UNICODE 13 TYPE BASE END_GLYPH
 DEF_GLYPH "space" ID 3 UNICODE 32 TYPE BASE END_GLYPH
 DEF_GLYPH "tab" ID 4 UNICODE 9 END_GLYPH
 ```
-These can be cleaned up within VOLT by using the Glyph Editor or by exporting the project to a text file, editing, and re-importing the project.
+
+These can be cleaned up within VOLT by using the Glyph Editor or by exporting the project to a text file, editing to remove the `UNICODE nn` reference, and re-importing the project.
 
 [OTSpec]: https://www.microsoft.com/typography/otspec/os2.htm#fci
