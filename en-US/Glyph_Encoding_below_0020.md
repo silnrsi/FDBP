@@ -13,7 +13,7 @@ title: Encoding glyphs below U+0020 SPACE
 # Background
 
 The OS/2 table contains a field known as `usFirstCharIndex` which, according to the [OpenType specification][OTSpec], is:
-[OTSpec]:https://www.microsoft.com/typography/otspec/os2.htm#fci
+
 >The minimum Unicode index (character code) in this font, according to the cmap subtable for platform ID 3 and platform- specific encoding ID 0 or 1. For most fonts supporting Win-ANSI or other character sets, this value would be 0x0020. This field cannot represent supplementary character values (codepoints greater than 0xFFFF). Fonts that support supplementary characters should set the value in this field to 0xFFFF if the minimum index value is a supplementary character.
 
 which suggests that the norm is for Unicode cmaps to start encoding at U+0020.
@@ -56,3 +56,5 @@ DEF_GLYPH "space" ID 3 UNICODE 32 TYPE BASE END_GLYPH
 DEF_GLYPH "tab" ID 4 UNICODE 9 END_GLYPH
 ```
 These can be cleaned up within VOLT by using the Glyph Editor or by exporting the project to a text file, editing, and re-importing the project.
+
+[OTSpec]: https://www.microsoft.com/typography/otspec/os2.htm#fci
