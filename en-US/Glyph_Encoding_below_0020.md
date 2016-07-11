@@ -1,7 +1,7 @@
 ---
 published: true
 layout: bookpage
-weight: 200
+weight: 210.6
 outlevel: 4.1
 category: Glyph Metadata
 title: Encoding glyphs below U+0020 SPACE
