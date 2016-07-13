@@ -5,6 +5,7 @@ weight: 210.6
 outlevel: 4.1
 category: Glyph Metadata
 title: Encoding glyphs below U+0020 SPACE
+shorttitle: Glyphs below U+0020
 ---
 # Recommendation
 
