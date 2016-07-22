@@ -2,12 +2,12 @@
 published: true
 layout: bookpage
 weight: 210.6
-outlevel: 4.1
+outlevel: 4.2
 category: Glyph Metadata
 title: Encoding glyphs below U+0020 SPACE
-shorttitle: Glyphs below U+0020
+shorttitle: Characters below U+0020
 ---
-# Recommendation
+# Summary of Recommendations
 
 **We recommend that fonts not encode in the cmap characters below U+0020 SPACE.**
 
