@@ -9,7 +9,7 @@ title: Adobe GLyph List
 
 # Adobe Glyph List
 
-In the [previous article](Glyph_Naming.html) we recommended that glyphs should be named in accordance with the standard set and maintained by Adobe. What is this standard and how does it work?
+In the [previous article](Glyph_Naming.html) we recommended that glyphs should be named in accordance with the standard set and maintained by Adobe®. What is this standard and how does it work?
 
 Adobe maintains this standard in two public GitHub repositories under their [adobe-type-tools] umbrella:
 
@@ -50,23 +50,25 @@ The suffix can be about anything &mdash; its purpose is to identify variant glyp
 NB: Some modern tools such as the GlyphsApp font editor understand commonly used suffixes and will automatically build font smarts for them.
 
 ### Basename
-For working names, the basename can be about anything, but for production names it is essential that the name be constructed so that it identifies the Unicode character(s) that the glyph represents. This mapping, from glyph name to Unicode character sequence, is the essence of the [AGL] specification.
+For working names the basename can be about anything. For production names, however, it is essential that the basename be constructed so that it identifies the Unicode character(s) that the glyph represents. This mapping, from glyph name to Unicode character sequence, is the essence of the [AGL] specification.
 
 Historically, in its own fonts, Adobe has used a lot of names that are no longer recommended. For this reason there are several different glyph lists in the AGL. For new fonts, we recommend using only the names that are in the [Adobe GLyph List for New Fonts \[AGLFN\]][aglfn].
 
-#### Basename for arbitrary Unicode character(s)
+### Basename for arbitrary Unicode character(s)
 What if a needed basename is not included in the AGLFN? In this case a special naming convention using the Unicode Scalar Value [USV] of the character(s) should be used.
 
-1. Characters in Unicode's Basic Multilingual Plane (BMP) may be represented by either of the formats `u<CODE>` or `uni<CODE>`. Characters in Unicode's supplemental planes may be represented only by the format `u<CODE>`. &lt;CODE&gt; is the Unicode Scalar Value of the character, an uppercase hexadecimal number four to six digits long. There must be no leading zeros, unless the code value would have fewer than four hexadecimal digits, in which case it must be padded to four digits. Surrogate code values (U+D800 to U+DFFF, inclusive) and the two noncharacter code values (U+FFFE and U+FFFF) are prohibited.  
+Characters in Unicode's Basic Multilingual Plane (BMP) may be represented by either of the formats `u<CODE>` or `uni<CODE>`. Characters in Unicode's supplemental planes may be represented only by the format `u<CODE>`. &lt;CODE&gt; is the Unicode Scalar Value of the character, an uppercase hexadecimal number four to six digits long. There must be no leading zeros, unless the code value would have fewer than four hexadecimal digits, in which case it must be padded to four digits. Surrogate code values (U+D800 to U+DFFF, inclusive) and the two noncharacter code values (U+FFFE and U+FFFF) are prohibited.  
+
 **Caution:** while both the `uni<CODE>` and `u<CODE>` notations are likely to be supported in all modern tools, there may be older applications that do not recognize the `u<CODE>` names. For that reason, for BMP characters, we recommend using `uni<CODE>`
 
-2. Ligature or other decomposition sequences that contain only BMP characters may be represented by either of the following formats:
-  - Underscore-separated: In this format, the underscore (`_`) separates component names. Component names may be AGL, `u<CODE>` or `uni<CODE>` names. For example: `uni1234_uni5678`.
-  - Code-concatenated: In this format, the glyph name is expressed as `uni` followed by two or more BMP &lt;CODE&gt;s, which indicate the code values of the components. &lt;CODE&gt; follows the same specification as for `uni<CODE>` names. For example, `uni12345678` represents &lt;U+1234, U+5678&gt;.
+Ligature or other decomposition sequences that contain only BMP characters may be represented by either of the following formats:
 
-3. Ligature or other decomposition sequences that contain a supplemental character may be represented only by the underscore-separated format. For example: `u12345_u102345`, `a_u12345`.
+- Underscore-separated: In this format, the underscore (`_`) separates component names. Component names may be AGL, `u<CODE>` or `uni<CODE>` names. For example: `uni1234_uni5678`.
+- Code-concatenated: In this format, the glyph name is expressed as `uni` followed by two or more BMP &lt;CODE&gt;s, which indicate the code values of the components. &lt;CODE&gt; follows the same specification as for `uni<CODE>` names. For example, `uni12345678` represents &lt;U+1234, U+5678&gt;.
 
-4. No two glyph names in a font should yield the same (non-variant) Unicode character on analysis. If they do (e.g. `u1234` and `uni1234`), the results are unspecified.
+Ligature or other decomposition sequences that contain a supplemental character may be represented only by the underscore-separated format. For example: `u12345_u102345`, `a_u12345`.
+
+No two glyph names in a font should yield the same (non-variant) Unicode character on analysis. If they do (e.g. `u1234` and `uni1234`), the results are unspecified.
 
 Examples:
 
