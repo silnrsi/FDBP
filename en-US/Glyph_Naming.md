@@ -23,7 +23,7 @@ Given the ubiquitous support for TrueType/OpenType fonts, one might ask why do w
 
 The answer starts in the era before TrueType came along, in which Adobe's sophisticated page layout engine accessed glyphs by their names &mdash; glyphs had no other way to be located other than by their name. In fact, glyph names were simply another token in the PostScript programming language &mdash; and that is why even today glyph names have a very strict allowed form.
 
-Going even further, some software packages are able to infer certain properties a glyph from just its name. The most commonly cited case of this is that some PDF files do not include any representation of the _character_ stream that the document represents, but yet you can still copy _characters_ from the document to the clipboard. The reason this works at all &mdash; and it doesn't always work perfectly &mdash; is that Acrobat is able to deduce the character stream (or something close to it) by looking only at the names of the glyphs in the file.
+Going even further, some software packages are able to infer certain properties of a glyph from just its name. The most commonly cited case of this is that some PDF files do not include any representation of the _character_ stream that the document represents, but yet you can still copy _characters_ from the document to the clipboard. The reason this works at all &mdash; and it doesn't always work perfectly &mdash; is that Acrobat is able to deduce the character stream (or something close to it) by looking only at the names of the glyphs in the file.
 
 All of this can work, however, only if the glyphs have been correctly named &mdash; meaning named according to Adobe standards. It is for exactly these reasons that we give the recommendations at the top of this article.
 
@@ -31,13 +31,19 @@ All of this can work, however, only if the glyphs have been correctly named &mda
 The first thing to recognize is that, as we'll see in a minute, the glyph names that should be in a font when it is shipped (i.e. released) are not necessarily the most friendly and memorable names. Therefore many developers use a different set of glyph names for development purposes and, as a last step of production, change the glyph names to the "official" names. We will call these two sets of glyph names the **working names** and the **production names**, respectively.
 
 As an example, the acceptable *production name* for a glyph representing U+0628 ARABIC LETTER BEH would be one of:
-- `uni0608`
-- `u0608`
+
+- `uni0628`
+- `u0628`
 - `afii57416`
 
 However, as none of these is particularly memorable, designers might, for example, choose a *working name* of `beh`.
 
 The use of working and production glyph names is common enough that at least one modern font format (the UFO format) provides a mechanism to manage both glyph names, and some font editing applications (GlyphsApp) automatically convert names from working to production during export.
+
+## Not all glyphs need production names
+Note that even in a shipping font, there may be glyphs that do not need production names. Any glyphs used _only_ as components of some other [composite] glyph need not have production names because the component glyphs can never end up in the output glyph stream of rendered text.
+
+For example, many letters in the Arabic script are distinguished from each other only by the pattern of dots drawn above or below the main shape. A font might use component glyphs for each pattern of dots (one dot below, one dot above, two dots below, etc.) and also for each main shape, and then construct the desired glyph repertoire using composites that reference the appropriate base and dot glyphs. The glyphs for various patterns of dots can never appear in the output stream, so they do not need production names.
 
 # Glyph names are also known as PostScript names
 
@@ -47,7 +53,7 @@ Because of this, glyph names are often referred to as *PostScript names* or some
 
 Note that it doesn't matter whether one is talking about working names or production names, they are still considered *PostScript names* and their construction should abide by the relevant Adobe standard.
 
-**Next: ** the [Adobe Glyph List](Adobe_Glyph_List.html) standard
+**Next:** the [Adobe Glyph List](Adobe_Glyph_List.html) standard
 
 [`post`]: https://www.microsoft.com/typography/otspec/post.htm
 [AGL]: https://github.com/adobe-type-tools/agl-specification

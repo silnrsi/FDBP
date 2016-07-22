@@ -12,6 +12,7 @@ title: Adobe GLyph List
 In the [previous article](Glyph_Naming.html) we recommended that glyphs should be named in accordance with the standard set and maintained by Adobe. What is this standard and how does it work?
 
 Adobe maintains this standard in two public GitHub repositories under their [adobe-type-tools] umbrella:
+
 - [Adobe Glyph List Specification][AGL]
 - [AGL & AGLFN][agl-aglfn]
 
@@ -19,6 +20,7 @@ The various files in these two repos work together and should be thought of as o
 
 # How does it work?
 There are actually number of components involved, specifying:
+
 - allowed form for glyph names, including
   + what letters are allowed
   + permitted length
@@ -30,6 +32,7 @@ There are actually number of components involved, specifying:
 
 # Requirements for all glyph names
 At the minimum, to conform to AGL requirements, a glyph name:
+
 - can be no longer than 31 characters, and
 - must consist only of characters from the following set: A–Z, a–z, 0–9, . (period, U+002E FULL STOP), and _ (underscore, U+005F LOW LINE)
 
@@ -37,13 +40,14 @@ In a font project, _working glyph names_ should at least meet these two minimum 
 
 ## General format
 Glyph names can be thought of as having two parts, which we will call _basename_ and _suffix_. These parts are identified as follows:
+
 - If the glyph name does not contain a period (`.`) then the entire name is the basename.
 - If the glyph name contains at least one period (`.`), then the _first_ period is the separator: everything before it is the basename and everything after it is the suffix.
 
 ### Suffix
 The suffix can be about anything &mdash; its purpose is to identify variant glyphs. For example a `.swsh` suffix might be used to indicate a swash variant and `.smcp` used to indicate small cap.
 
-NB: Some modern tools such as the GlyphsApps font editor understand commonly used suffixes and will automatically build font smarts for them.
+NB: Some modern tools such as the GlyphsApp font editor understand commonly used suffixes and will automatically build font smarts for them.
 
 ### Basename
 For working names, the basename can be about anything, but for production names it is essential that the name be constructed so that it identifies the Unicode character(s) that the glyph represents. This mapping, from glyph name to Unicode character sequence, is the essence of the [AGL] specification.
@@ -53,11 +57,16 @@ Historically, in its own fonts, Adobe has used a lot of names that are no longer
 #### Basename for arbitrary Unicode character(s)
 What if a needed basename is not included in the AGLFN? In this case a special naming convention using the Unicode Scalar Value [USV] of the character(s) should be used.
 
-1. Characters in Unicode's Basic Multilingual Plane (BMP) may be represented by either of the formats `u<CODE>` or `uni<CODE>`. Characters in Unicode's supplemental planes may be represented only by the format `u<CODE>`. &lt;CODE&gt; is the Unicode scalar value of the character, an uppercase hexadecimal number four to six digits long. There must be no leading zeros, unless the code value would have fewer than four hexadecimal digits, in which case it must be padded to four digits. Surrogate code values (U+D800 to U+DFFF, inclusive) and the two noncharacter code values (U+FFFE and U+FFFF) are prohibited.
+1. Characters in Unicode's Basic Multilingual Plane (BMP) may be represented by either of the formats `u<CODE>` or `uni<CODE>`. Characters in Unicode's supplemental planes may be represented only by the format `u<CODE>`. &lt;CODE&gt; is the Unicode Scalar Value of the character, an uppercase hexadecimal number four to six digits long. There must be no leading zeros, unless the code value would have fewer than four hexadecimal digits, in which case it must be padded to four digits. Surrogate code values (U+D800 to U+DFFF, inclusive) and the two noncharacter code values (U+FFFE and U+FFFF) are prohibited.  
+**Caution:** while both the `uni<CODE>` and `u<CODE>` notations are likely to be supported in all modern tools, there may be older applications that do not recognize the `u<CODE>` names. For that reason, for BMP characters, we recommend using `uni<CODE>`
+
 2. Ligature or other decomposition sequences that contain only BMP characters may be represented by either of the following formats:
   - Underscore-separated: In this format, the underscore (`_`) separates component names. Component names may be AGL, `u<CODE>` or `uni<CODE>` names. For example: `uni1234_uni5678`.
-  - Code-concatenated: In this format, the glyph name is expressed as `uni` followed by two or more BMP &lt;CODE&gt;s, which indicate the code values of the components. &lt;CODE&gt; follows the same specification as for `uni<CODE>` names. For example, `uni12345678` represents &lt;U+1234, U+5678&gt;. Ligature or other decomposition sequences that contain a supplemental character may be represented only by the underscore-separated format. For example: `u12345_u102345`, `a_u12345`.
-3. No two glyph names in a font should yield the same (non-variant) Unicode character on analysis. If they do (e.g. `u1234` and `uni1234`), the results are unspecified.
+  - Code-concatenated: In this format, the glyph name is expressed as `uni` followed by two or more BMP &lt;CODE&gt;s, which indicate the code values of the components. &lt;CODE&gt; follows the same specification as for `uni<CODE>` names. For example, `uni12345678` represents &lt;U+1234, U+5678&gt;.
+
+3. Ligature or other decomposition sequences that contain a supplemental character may be represented only by the underscore-separated format. For example: `u12345_u102345`, `a_u12345`.
+
+4. No two glyph names in a font should yield the same (non-variant) Unicode character on analysis. If they do (e.g. `u1234` and `uni1234`), the results are unspecified.
 
 Examples:
 
@@ -78,17 +87,6 @@ Examples:
 |`u110000`|UNRECOGNIZED (&lt;CODE&gt; must be <= 0x10FFFF)|
 |`u102345106789`|UNRECOGNIZED (use `_` for supp char ligatures)|
 |`uniD800DC00`|UNRECOGNIZED (surrogates not allowed)|
-
-
-
-
-
-
-
-
-
-
-For those glyphs that need them, production names should be based on the [Adobe Glyph List for New Fonts][agl-aglfn] or **AGLFN**.
 
 
 [adobe-type-tools]: https://github.com/adobe-type-tools
