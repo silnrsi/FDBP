@@ -7,7 +7,7 @@ category: Glyph Metadata
 title: Glyph Naming
 ---
 # Summary of Recommendations
-**We recommend glyph names (a.k.a. psnames or PostScript names) be included in released (that is, shipping) fonts.**
+**We recommend that glyph names (a.k.a. psnames or PostScript® names) be included in released (that is, shipping) fonts.**
 
 **Developers may choose to manage two sets of glyph names: *working* glyph names ("friendly" names used during development) and *production* glyph names (used in the shipping font).**
 
@@ -21,7 +21,7 @@ For various reasons (historical, technical, convenience) most font development t
 # Why even have glyph names?
 Given the ubiquitous support for TrueType/OpenType fonts, one might ask why do we even have glyph names? Nothing _inside_ an OpenType font requires glyphs to have names &mdash; complex layout tables `GSUB` and `GPOS`, for example, do all their work in terms of glyph indexes. Even for the `post` table itself (where glyph names are stored), one of the allowed forms, called Verson 3, is one that has no names. So one might reasonably ask: if functional fonts can be produced without glyph names, why have them at all?
 
-The answer starts in the era before TrueType came along, in which Adobe's sophisticated page layout engine accessed glyphs by their names &mdash; glyphs had no other way to be located other than by their name. In fact, glyph names were simply another token in the PostScript programming language &mdash; and that is why even today glyph names have a very strict allowed form.
+The answer starts in the era before TrueType came along, in which Adobe's sophisticated page layout engine accessed glyphs by their names &mdash; glyphs had no other way to be located other than by their name. In fact, glyph names were simply another identifier in the PostScript programming language &mdash; and that is why even today glyph names have a very strict allowed form.
 
 Going even further, some software packages are able to infer certain properties of a glyph from just its name. The most commonly cited case of this is that some PDF files do not include any representation of the _character_ stream that the document represents, but yet you can still copy _characters_ from the document to the clipboard. The reason this works at all &mdash; and it doesn't always work perfectly &mdash; is that Acrobat is able to deduce the character stream (or something close to it) by looking only at the names of the glyphs in the file.
 
@@ -47,7 +47,7 @@ For example, many letters in the Arabic script are distinguished from each other
 
 # Glyph names are also known as PostScript names
 
-As an early industry leader with its PostScript® technologies, Adobe® has set &mdash; and now maintains &mdash; the standard for how glyphs are named, both in terms of what constitutes a valid name and, within that framework, what specific names are recommended. Within an OpenType font, glyph names are stored in the [`post`] table.
+As an early industry leader with its PostScript technologies, Adobe has set &mdash; and now maintains &mdash; the standard for how glyphs are named, both in terms of what constitutes a valid name and, within that framework, what specific names are recommended. Within an OpenType font, glyph names are stored in the [`post`] table.
 
 Because of this, glyph names are often referred to as *PostScript names* or sometimes, more simply, *psnames*.
 

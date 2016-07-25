@@ -9,7 +9,7 @@ title: Adobe GLyph List
 
 # Adobe Glyph List
 
-In the [previous article](Glyph_Naming.html) we recommended that glyphs should be named in accordance with the standard set and maintained by Adobe®. What is this standard and how does it work?
+In the [previous article](Glyph_Naming.html) we recommended that glyphs should be named in accordance with the standard set and maintained by Adobe. What is this standard and how does it work?
 
 Adobe maintains this standard in two public GitHub repositories under their [adobe-type-tools] umbrella:
 
@@ -24,7 +24,7 @@ There are actually number of components involved, specifying:
 - allowed form for glyph names, including
   + what letters are allowed
   + permitted length
-- a complete list of names that PostScript interpreters/engines are guaranteed to recognize.
+- a complete list of names that PostScript® interpreters/engines are guaranteed to recognize.
 - a subset of the above that is recommended for new fonts.
 - a general mechanism to generate names for every character that is, or ever will be, in the Unicode standard.
 - how to combine names to denote ligatures
@@ -88,10 +88,11 @@ Examples:
 |`u102345_u106789`|U+102345, U+106789|
 |`u110000`|UNRECOGNIZED (&lt;CODE&gt; must be <= 0x10FFFF)|
 |`u102345106789`|UNRECOGNIZED (use `_` for supp char ligatures)|
-|`uniD800DC00`|UNRECOGNIZED (surrogates not allowed)|
+|`uniD800DC00`|UNRECOGNIZED ([surrogates] not allowed)|
 
 
 [adobe-type-tools]: https://github.com/adobe-type-tools
 [AGL]: https://github.com/adobe-type-tools/agl-specification
 [agl-aglfn]: https://github.com/adobe-type-tools/agl-aglfn
 [aglfn]: https://github.com/adobe-type-tools/agl-aglfn/blob/master/aglfn.txt
+[surrogates]: http://unicode.org/glossary/#surrogate_code_point

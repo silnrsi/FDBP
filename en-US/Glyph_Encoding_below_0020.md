@@ -33,13 +33,13 @@ One example is Scribus which, as of the May 2014, actually draws the glyph for C
 
 The exact procedures needed to make sure your font does not encode characters below U+0020 will depend on the toolchain you use.
 
-## Fontlab
+## FontLab
 
-For Fontlab Studio, follow these steps:
+For FontLab Studio, follow these steps:
 
-1. Make sure none of .null, CR/nonmarkingreturn or tab (or anything else down there before the space glyph) have USVs in their glyph properties.
+1. Make sure none of `.null`, `CR` (may be called `nonmarkingreturn`) or `tab` (or anything else before the `space` glyph) have USVs in their glyph properties.
 
-1. Set FontInfo to not add .null, CR and space:
+1. Set FontInfo to not add .null, CR and space (in other words, leave box unchecked):
 ![FLFontInfo](images/EncodingBelow0020_FLFontInfo.png "Fontlab FontInfo dialog")
 
 1. Finally make sure in the TrueType generation options that the first 256 chars are not being re-encoded:
