@@ -34,7 +34,12 @@ There are actually number of components involved, specifying:
 At the minimum, to conform to AGL requirements, a glyph name:
 
 - can be no longer than 31 characters, and
-- must consist only of characters from the following set: A–Z, a–z, 0–9, . (period, U+002E FULL STOP), and _ (underscore, U+005F LOW LINE)
+- must consist only of characters from the following set:
+  + A–Z
+  + a–z
+  + 0–9
+  + . (period, U+002E FULL STOP)
+  + _ (underscore, U+005F LOW LINE)
 
 In a font project, _working glyph names_ should at least meet these two minimum requirements.
 
