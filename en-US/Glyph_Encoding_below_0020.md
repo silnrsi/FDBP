@@ -37,7 +37,7 @@ The exact procedures needed to make sure your font does not encode characters be
 
 For FontLab Studio, follow these steps:
 
-1. Make sure none of `.null`, `CR` (may be called `nonmarkingreturn`) or `tab` (or anything else before the `space` glyph) have USVs in their glyph properties.
+1. Make sure none of `.null` (sometimes called `NULL`), `CR` (may be called `nonmarkingreturn`), `tab`, or anything else before the `space` glyph have USVs in their glyph properties.
 
 1. Set FontInfo to not add .null, CR and space (in other words, leave box unchecked):
 ![FLFontInfo](images/EncodingBelow0020_FLFontInfo.png "Fontlab FontInfo dialog")
