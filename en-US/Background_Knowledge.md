@@ -7,7 +7,7 @@ category: Introduction
 title: Background Knowledge
 ---
 
-The discussions in the following chapters assume a certain amount of background Knowledge.
+The discussions in the following chapters assume a certain amount of background knowledge.
 Some of this depends on the specific subject.
 For example, a font designer who is creating character glyphs needs to know different things than a script engineer who is constructing OpenType tables.
 
