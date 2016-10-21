@@ -7,9 +7,9 @@ category: Glyph Metadata
 title: Adobe GLyph List
 ---
 
-# Adobe Glyph List
-
 In the [previous article](Glyph_Naming.html) we recommended that glyphs should be named in accordance with the standard set and maintained by Adobe. What is this standard and how does it work?
+
+# Adobe Glyph List
 
 Adobe maintains this standard in two public GitHub repositories under their [adobe-type-tools] umbrella:
 

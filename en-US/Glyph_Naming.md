@@ -7,7 +7,7 @@ category: Glyph Metadata
 title: Glyph Naming
 ---
 # Summary of Recommendations
-**We recommend that glyph names (a.k.a. psnames or PostScript® names) be included in released (that is, shipping) fonts.**
+**We recommend that glyph names (also called psnames or PostScript® names) be included in released (that is, shipping) fonts.**
 
 **Developers may choose to manage two sets of glyph names: *working* glyph names ("friendly" names used during development) and *production* glyph names (used in the shipping font).**
 

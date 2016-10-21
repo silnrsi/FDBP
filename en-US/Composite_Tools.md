@@ -9,7 +9,7 @@ title: Composite Tools
 
 This subsection describes one tool for creating composite glyphs.
 
-### Composite building tool ###
+# Composite building tool
 
 There is a python script named ```UFObuildComp.py``` found in ```pysilfont```. It accepts a list of composite definitions and constructs a composite glyph for each definition line. For example,
 
@@ -20,7 +20,7 @@ There is a python script named ```UFObuildComp.py``` found in ```pysilfont```. I
 * adds composite glyphs to the CharisSIL-Regular font
 * writes results to a log file CharisSIL-Regular.log (default name based on font name)
 
-### Basic syntax of input file ###
+# Basic syntax of input file
 
 The format used for composite definitions is a subset of that used by RoboFont. It allows:
 
@@ -56,7 +56,7 @@ The first line defines the glyph ```LtnCapACircumGrave``` (Latin capital letter 
 
 The second line in the above example defines another composite glyph for this same Unicode character to be used when the Vietnamese writing system is active, since in Vietnamese these diacritics appear next to each other rather than one atop the other.
 
-### Extension to basic syntax ###
+# Extension to basic syntax
 
 SIL added an extension to the RoboFont syntax in order to allow additional properties to be added with minimal conflict with the original syntax. The list of properties is enclosed in square brackets, entries are separated by semicolons and each entry consists of a property name, an equals sign and a value.
 
