@@ -48,6 +48,7 @@ In addition all scripts will output in a normalized form, designed to work with 
 
 The simplest script is UFOconvert, which will convert between UFO 2 and UFO3 (if -v is used to specify the alternative version) or otherwise simply normalize the UFO by ‘converting’ to the existing version.  Note that this same functionality is in most other scripts, so UFOconvert is normally only needed after fonts have been processed by external font tools.
 The following are known limitations that are due to be addressed in the future:
+
 * UFO 3 specific folders (data and images) are not copied
 * Converting from UFO 3 to UFO 2 only handles data that has a place in UFO 2, but does include converting UFO 3 anchors to the standard way of handling them in UFO 2
 
