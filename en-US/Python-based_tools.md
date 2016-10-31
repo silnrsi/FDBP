@@ -27,13 +27,13 @@ All of the above are open-source projects.
 
 Many font editors also support python scripting within their GUI.
 
-# Fonttools #
+# Fonttools
 
 Fonttools - a library for manipulating fonts, written in Python. The project includes the TTX tool, which can convert TrueType and OpenType fonts to and from an XML text format (also called TTX). It supports TrueType, OpenType, AFM and, to an extent, Type 1 and some Mac-specific formats.
 
 (More details to be added)
 
-# Pysilfont #
+# Pysilfont
 
 This a growing collection of tools, initially  written by members of SIL International’s Non-Roman Script Initiative team, with a broader set of contributors welcome.
 Included are a UFO object library, support for testing fonts and scripts for specific tasks.
@@ -41,8 +41,8 @@ These tools are designed with a UFO-based workflow in mind, though many would al
 
 Most scripts are written to use a standard framework (which is included in the libraries). This framework provides for help text, parameter handling, file opening and error reporting, thereby simplifying script writing and giving users a standard interface.
 
-## UFO support ##
-With some limitations, all UFO scripts should work with UFO2 or UFO3 source files - and can convert from one format to the other.
+## UFO support in Pysilfont
+With some limitations, all UFO scripts in Pysilfont should work with UFO2 or UFO3 source files - and can convert from one format to the other.
 
 In addition all scripts will output in a normalized form, designed to work with source control systems.  Most aspects of the normalization can be set by parameters, so projects are not forced to use Pysilfont’s default normalization.
 
