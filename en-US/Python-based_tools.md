@@ -11,7 +11,7 @@ In addition to the various font editors already listed, it is often useful to us
 
 This could apply during the design process (for example, automatically creating composite glyphs) or during the build process (for example, automatically updating glyph names from design names to production names).
 
-Python has become the de facto standard for such scripting, and there are several python-based collections of fonts tools available which include pre-written scripts to perform specific tasks as well as python libraries which can be used when writing new scripts or when modifying existing scripts to meet specific needs.
+Python has become the de facto standard for such scripting, and there are several python-based collections of fonts tools available. These include both pre-written scripts to perform specific tasks as well as python libraries which can be used when writing new scripts or when modifying existing scripts to meet specific needs.
 
 Those available include:
 
@@ -47,6 +47,7 @@ With some limitations, all UFO scripts in Pysilfont should work with UFO2 or UFO
 In addition all scripts will output in a normalized form, designed to work with source control systems.  Most aspects of the normalization can be set by parameters, so projects are not forced to use Pysilfont’s default normalization.
 
 The simplest script is UFOconvert, which will convert between UFO 2 and UFO3 (if -v is used to specify the alternative version) or otherwise simply normalize the UFO by ‘converting’ to the existing version.  Note that this same functionality is in most other scripts, so UFOconvert is normally only needed after fonts have been processed by external font tools.
+
 The following are known limitations that are due to be addressed in the future:
 
 * UFO 3 specific folders (data and images) are not copied
