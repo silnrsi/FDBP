@@ -11,7 +11,7 @@ This subsection describes one tool for creating composite glyphs.
 
 # Composite building tool
 
-There is a python script named ```UFObuildComp.py``` found in ```pysilfont```. It accepts a list of composite definitions and constructs a composite glyph for each definition line. For example,
+There is a python script named ```UFObuildComp.py``` found in the [Pysilfont][pysilfont] collection. It accepts a list of composite definitions and constructs a composite glyph for each definition line. For example,
 
 ```python UFObuildComp.py -i composites.txt -r V CharisSIL-Regular.ufo ```
 
@@ -70,3 +70,5 @@ Example (4):
 ```InvisibleTimes.ShowInv = BoxDotted + LtnCapX.Sophia@C11 [with=_C]```
 
 defines a glyph composed of the ```BoxDotted``` glyph (a box made with a dotted line) with a glyph containing a sans-serif "X". The attachment point on the dotted box is ```C11```, so by default the corresponding attachment point on the ```LtnCapX.Sophia``` glyph would be ```_C11```. Using ```[with=_C]``` overrides that with the ```_C``` attachment point.
+
+[pysilfont]: https://github.com/silnrsi/pysilfont
