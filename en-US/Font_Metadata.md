@@ -7,4 +7,4 @@ category: Font Metadata
 title: Font Metadata
 ---
 
-This chapter will contain guidance on font naming, versioning and line metrics.
+The following sections contain guidance on font naming, versioning, design metrics and line metrics.

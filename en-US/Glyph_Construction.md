@@ -7,4 +7,4 @@ category: Glyph Construction
 title: Glyph Construction
 ---
 
-This chapter will contain guidance on drawing good outlines, interpolating glyphs, creating composite glyphs, and managing anchors.
+This following sections contain guidance on creating composite glyphs. Future content will include information on drawing good outlines, interpolating glyphs, and managing anchors.
