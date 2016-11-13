@@ -4,7 +4,7 @@ layout: bookpage
 weight: 230.3
 outlevel: 4.4
 category: Glyph Metadata
-title: Adobe GLyph List
+title: Adobe Glyph List
 ---
 
 In the [previous article](Glyph_Naming.html) we recommended that glyphs should be named in accordance with the standard set and maintained by Adobe. What is this standard and how does it work?
