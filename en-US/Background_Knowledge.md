@@ -16,4 +16,4 @@ The most important background knowledge that all those involved in font developm
 We try to provide references to documents that will provide you with this background information.
 If you find that we've assumed some knowledge that made the discussion confusing, we invite you to let us know and we'll try to provide more information.
 
-[IWSc2] http://scripts.sil.org/IWS-Chapter02
+[IWSc2]: http://scripts.sil.org/IWS-Chapter02
