@@ -9,7 +9,7 @@ title: Adobe Glyph List
 
 In the [previous article](Glyph_Naming.html) we recommended that glyphs should be named in accordance with the standard set and maintained by Adobe. What is this standard and how does it work?
 
-# Adobe Glyph List
+## Adobe Glyph List
 
 Adobe maintains this standard in two public GitHub repositories under their [adobe-type-tools] umbrella:
 
@@ -18,7 +18,7 @@ Adobe maintains this standard in two public GitHub repositories under their [ado
 
 The various files in these two repos work together and should be thought of as one standard &mdash; and that standard is often called, simply, **the AGL**.
 
-# How does it work?
+## How does it work?
 There are actually number of components involved, specifying:
 
 - allowed form for glyph names, including
@@ -30,7 +30,7 @@ There are actually number of components involved, specifying:
 - how to combine names to denote ligatures
 - how to denote glyph variants (swash, small caps, etc)
 
-# Requirements for all glyph names
+## Requirements for all glyph names
 At the minimum, to conform to AGL requirements, a glyph name:
 
 - can be no longer than 31 characters, and
@@ -43,23 +43,23 @@ At the minimum, to conform to AGL requirements, a glyph name:
 
 In a font project, _working glyph names_ should at least meet these two minimum requirements.
 
-## General format
+### General format
 Glyph names can be thought of as having two parts, which we will call _basename_ and _suffix_. These parts are identified as follows:
 
 - If the glyph name does not contain a period (`.`) then the entire name is the basename.
 - If the glyph name contains at least one period (`.`), then the _first_ period is the separator: everything before it is the basename and everything after it is the suffix.
 
-### Suffix
+#### Suffix
 The suffix can be about anything &mdash; its purpose is to identify variant glyphs. For example a `.swsh` suffix might be used to indicate a swash variant and `.smcp` used to indicate small cap.
 
 NB: Some modern tools such as the GlyphsApp font editor understand commonly used suffixes and will automatically build font smarts for them.
 
-### Basename
+#### Basename
 For working names the basename can be about anything. For production names, however, it is essential that the basename be constructed so that it identifies the Unicode character(s) that the glyph represents. This mapping, from glyph name to Unicode character sequence, is the essence of the [AGL] specification.
 
 Historically, in its own fonts, Adobe has used a lot of names that are no longer recommended. For this reason there are several different glyph lists in the AGL. For new fonts, we recommend using only the names that are in the [Adobe GLyph List for New Fonts \[AGLFN\]][aglfn].
 
-### Basename for arbitrary Unicode character(s)
+#### Basename for arbitrary Unicode character(s)
 What if a needed basename is not included in the AGLFN? In this case a special naming convention using the Unicode Scalar Value [USV] of the character(s) should be used.
 
 Characters in Unicode's Basic Multilingual Plane (BMP) may be represented by either of the formats `u<CODE>` or `uni<CODE>`. Characters in Unicode's supplemental planes may be represented only by the format `u<CODE>`. &lt;CODE&gt; is the Unicode Scalar Value of the character, an uppercase hexadecimal number four to six digits long. There must be no leading zeros, unless the code value would have fewer than four hexadecimal digits, in which case it must be padded to four digits. Surrogate code values (U+D800 to U+DFFF, inclusive) and the two noncharacter code values (U+FFFE and U+FFFF) are prohibited.  
