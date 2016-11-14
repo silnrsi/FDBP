@@ -7,11 +7,11 @@ category: Glyph Metadata
 title: Encoding glyphs below U+0020 SPACE
 shorttitle: Characters below U+0020
 ---
-# Summary of Recommendations
+## Summary of Recommendations
 
 **We recommend that fonts not encode in the cmap characters below U+0020 SPACE.**
 
-# Background
+## Background
 
 The OS/2 table contains a field known as `usFirstCharIndex` which, according to the [OpenType specification][OTSpec], is:
 
@@ -21,7 +21,7 @@ which suggests that the norm is for Unicode cmaps to start encoding at U+0020.
 
 Historically, however, a number of vendors (most commonly Adobe and SIL) have released fonts with characters below U+0020 (space) encoded in the cmap, resulting in the `usFirstCharIndex` value being less than 0x0020.
 
-# Why is this a problem?
+## Why is this a problem?
 
 `usFirstCharIndex` values lower than 0x0020 can confuse software and cause unexpected results.
 
@@ -29,11 +29,11 @@ One example is Scribus which, as of the May 2014, actually draws the glyph for C
 ![Right-aligned-Scribus](images/EncodedCRinScribus.png "Encoded CR and LF cause right-alignment issues")
 
 
-# Solutions
+## Solutions
 
 The exact procedures needed to make sure your font does not encode characters below U+0020 will depend on the toolchain you use.
 
-## FontLab
+### FontLab
 
 For FontLab Studio, follow these steps:
 
@@ -46,7 +46,7 @@ For FontLab Studio, follow these steps:
 ![FLTTGen](images/EncodingBelow0020_FLTTGen.png "Fontlab TT Generation")
 
 
-## VOLT
+### VOLT
 
 If the project uses Microsoft VOLT then the VOLT project (`.vtp` file) may be overriding the encoding of these first few glyphs, e.g.,:
 

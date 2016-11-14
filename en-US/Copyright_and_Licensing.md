@@ -9,7 +9,7 @@ title: Copyright and Licensing
 
 **All fonts should contain clear information on copyright and licensing.**
 
-# Copyright
+## Copyright
 
 **All fonts should contain a copyright statement that accurately reflects the legal copyright holder of the font software.**  It is important that the copyright holder be a legal entity - an individual, organization, company. In the case of joint copyright this may be multiple legal parties. The copyright holder is the only legal entity that can choose the license under which a font is distributed. Without a copyright statement, or a copyright statement that does not state a real legal entity, the font is in legal limbo and will be strongly avoided.
 
@@ -35,13 +35,13 @@ The internal copyright field is stored inside the font file, and font design pac
 
 The same copyright statement(s) should also be in the font package documentation, typically in a LICENSE or ReadMe file. **For OFL-licensed fonts this should be at the very top of the OFL.txt file.**
 
-# License
+## License
 
 **All fonts should contain a license statement that governs use and distribution of the font. We strongly recommend use of well-established licenses, whether free and open or restrictive.** We strongly recommend against using "Public Domain" or "This font may be freely used and distributed", as they have widely varying legal interpretations.
 
 **Fonts that are intended to be distributed and modified freely should use the [SIL Open Font License (OFL) version 1.1][OFL].** This is the standard license in the font industry for such font projects. Please consult the [OFL site][OFL] for detailed information and FAQs.
 
-## Using the OFL
+### Using the OFL
 
 In general, the process of licensing a font under the OFL has five steps:
 
@@ -65,7 +65,7 @@ It is also allowed by the OFL, but not recommended, to replace the full OFL text
 
 (5) _Include the current OFL-FAQ.txt file in the release package._
 
-## Using OFL Reserved Font Names
+### Using OFL Reserved Font Names
 
 Reserved Font Names (RFNs) are a useful way to establish unique names by which only unmodified versions of your fonts are known. Some web fonts services (Google in particular) do not recommend using them because it makes more work for them, but don't be scared away from using them. For more detail see the [OFL-FAQ].
 
@@ -75,7 +75,7 @@ If you do choose to declare any RFNs, use this format for the License field:
 
 > This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL...
 
-# Internal Copyright and License locations
+## Internal Copyright and License locations
 
 Internal license information is stored in a font's `name` table alongside the copyright statement(s). There are two separate entries for `License` (also called License Description; ID 13) and `License URL` (ID 14). It can be difficult to find where to set these in a font, so here are some specific instructions:
 

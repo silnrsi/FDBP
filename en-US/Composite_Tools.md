@@ -9,7 +9,7 @@ title: Composite Tools
 
 This subsection describes one tool for creating composite glyphs.
 
-# Composite building tool
+## Composite building tool
 
 There is a python script named ```UFObuildComp.py``` found in the [Pysilfont][pysilfont] collection. It accepts a list of composite definitions and constructs a composite glyph for each definition line. For example,
 
@@ -25,7 +25,7 @@ There is a python script named ```UFObuildComp.py``` found in the [Pysilfont][py
 The format used for composite definitions is a subset of that used by RoboFont. It allows:
 
 ```
-# everything after # is a comment
+## everything after # is a comment
 result = base1 & base2         # two bases
 result = base + diacritic@AP   # base plus diacritic (at attachment point)
 result = base + diac1@AP + diac2@AP # diac2 attaches to diac1

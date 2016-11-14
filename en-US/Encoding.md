@@ -9,19 +9,19 @@ title: Encoding
 
 (This section will eventually have more information)
 
-# Unicode
+## Unicode
 
 (This section will eventually have more information)
 
-# PUA
+## PUA
 
 (This section will eventually have more information)
 
-# Double-encoding
+## Double-encoding
 
 Double-encoding (needs definition).
 Adobe dogmatically discourages double-encoding.
 
-# Codepages
+## Codepages
 
 (This section will eventually have more information)
