@@ -7,4 +7,4 @@ category: Glyph Metadata
 title: Glyph Metadata
 ---
 
-THe following sections contain guidance on glyph naming, encoding and ordering. They also recommend a minimum set of glyphs that should be present in all fonts, Latin or non-Latin.  
+The following sections contain guidance on glyph naming, encoding and ordering. They also recommend a minimum set of glyphs that should be present in all fonts, Latin or non-Latin.  
