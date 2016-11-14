@@ -4,7 +4,7 @@ layout: bookpage
 weight: 210
 outlevel: 4.1
 category: Glyph Metadata
-title: Character and Glyph Inventory
+title: Characters and Glyphs
 ---
 
 It may seem obvious that a font must contain symbols for each _letter_ or _character_ of the writing system in focus. However, each of those _characters_ may be visually represented by one or more _glyphs_ - the individual graphic shapes defined in the font. At this point it's really important to have a clear understanding of the differences and interrelationships between characters, keystrokes, codepoints and glyphs. Chapter 2 of the online book [Implementing Writing Systems][IWSc2] is an excellent and thorough way to deepen that understanding.
