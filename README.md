@@ -1,10 +1,11 @@
 # FDBP
 Font Development Best Practice documentation
 
-General Info
-- Each page is written in GitHub Flavored Markdown (GFM) and begins with Jekyll front matter which specifies the title, category, weight (page sort order), published status, and layout (page template - bookpage is currently used by all pages).
+## General Info
+- The anticipated content of the book can be found in the https://github.com/silnrsi/FDBP/blob/gh-pages/en-US-weightlist.md document.
+- Each page is written in GitHub Flavored Markdown (GFM) and begins with Jekyll front matter which specifies the title, category, weight (page sort order), outline level (similar to the weight, but showing the hierarchy), published status, and layout (page template - bookpage is currently used by all pages).
 - The GFM pages are in the en-US folder.
-- The current pages are all placeholders which need to be filled out.
+- Some of the current pages are placeholders which need to be filled out and/or replaced by several pages. New pages probably aren’t needed for topics below the top level -- at least not until a higher level page gets too full.
 
 ## Contributing
 
@@ -22,8 +23,7 @@ weight, title, and possibly category.
 - New pages will generally use a category that’s already in use.
 - Add the page title and weight to en-US-weightlist.md.
 
-If you contribute, add your name to AUTHORS.txt. The structure Victor indicated can be found
-at the bottom of this Google [Doc](https://docs.google.com/document/d/1F0K-oYRw6ZqHvM1TT2k0_CkQuv-pJqvRQgQXNUb02IA/edit#heading=h.zhldii2y6sjb). New pages probably aren’t needed for topics below the top level -- at least not until a placeholder page gets too full.
+If you contribute, add your name to AUTHORS.txt.
 
 ## Previewing your changes locally
 To see your working copy of the site served locally in your browser, start a command window, change to the directory containing the repository (using the `cd` command) and start the jekyll server. For example:
