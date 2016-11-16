@@ -35,8 +35,8 @@ Note that only substitution type lookups are allowed in Stylistic Set and Charac
 
 ## Mark classes and filter sets
 
-[OTinfo on SS][http://scriptsource.org/cms/scripts/page.php?item_id=entry_detail&uid=kr5s6gwpdy]
+[OTinfo on SS]: http://scriptsource.org/cms/scripts/page.php?item_id=entry_detail&uid=kr5s6gwpdy
 
-[Stylistic Sets][http://www.microsoft.com/typography/otspec/features_pt.htm#ssxx]
+[Stylistic Sets]: http://www.microsoft.com/typography/otspec/features_pt.htm#ssxx
 
-[Character Variants][http://www.microsoft.com/typography/otspec/features_ae.htm#cv01-cv99]
+[Character Variants]: http://www.microsoft.com/typography/otspec/features_ae.htm#cv01-cv99
