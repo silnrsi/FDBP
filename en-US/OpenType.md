@@ -6,15 +6,21 @@ outlevel: 6.3
 category: OpenType
 title: OpenType
 ---
-On [ScriptSource][OTinfo on SS] there is information on where to find copies of the OpenType specification.
+Links to the OpenType specification, as well as other font specifications, can be found on [ScriptSource][OTinfo on SS].
 
 ## Lookup Orders
 
+(This section has not yet been written.)
+
 ## Language Tags
+
+(This section has not yet been written.)
 
 ## Feature Tags
 
 The OpenType specification provides for Layout Feature tables, each of which is identified by a 4-character tag.
+
+(This rest of this section has not yet been written.)
 
 ## Stylistic Sets and Character Variants
 
@@ -22,9 +28,9 @@ Tags for Layout Feature tables which are in the range "ss01" to "ss20" are regis
 
 When should one use [Stylistic Sets] and when should one use [Character Variants]?
 
-According to the OT spec, Character Variants (cvxx tags) should be preferred when only a few similar characters are affected, for example, all characters based on the ‘a’ form, while Stylist Sets (ssxx tags) are preferred when systematically related changes affect a number of characters. Having said that, there are some technical and practical distinctions that may require violating these guidelines:
+According to the OT spec, Character Variants (cvxx tags) should be preferred when only a few similar characters are affected, for example, all characters based on the ‘a’ form, while Stylist Sets (ssxx tags) are preferred when systematically related changes affect a large number of characters. Having said that, there are some technical and practical distinctions that may require violating these guidelines:
 
-- The cvxx tags utilize GSUB “alternate” (type 3) lookups thus allowing a feature to have more than on/off values.
+- The cvxx tags utilize GSUB “alternate” (type 3) lookups, thus allowing a feature to have more than on/off values.
 - There are only 20 registered ssxx features, but 99 cvxx features.
 - Some apps (MS Word for example) assume that users would need to turn on only one ssxx feature at a time.
 - Not as many apps support cvxx [yet].
@@ -34,6 +40,8 @@ According to the OT spec, Character Variants (cvxx tags) should be preferred whe
 Note that only substitution type lookups are allowed in Stylistic Set and Character Variant features and the features must be in the GSUB table. There may be cases where variant positioning behavior is needed, such as a feature that controls whether a particular diacritic is drawn touching its base or separated from it. While it may seem reasonable to use positioning type lookups and place the features in the GPOS table, it is unlikely that rendering engines will process such features during positioning.
 
 ## Mark classes and filter sets
+
+(This section has not yet been written.)
 
 [OTinfo on SS]: http://scriptsource.org/cms/scripts/page.php?item_id=entry_detail&uid=kr5s6gwpdy
 
