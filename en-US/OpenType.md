@@ -31,7 +31,7 @@ When should one use [Stylistic Sets] and when should one use [Character Variants
 According to the OpenType spec, Character Variants (cvxx tags) should be preferred when only one character or very closely related characters are affected. Examples include:
 
 - matching lower and upper case characters
-- a lower case character and it's small capital form
+- a lower case character and its small capital form
 - all characters that use a particular diacritic, where the diacritic has two forms
 
 Stylist Sets (ssxx tags) are preferred when systematically related changes affect more distinct characters. Examples include:
@@ -44,7 +44,7 @@ Having said that, there are some technical and practical distinctions that may r
 - The cvxx tags utilize GSUB “alternate” (type 3) lookups, thus allowing a feature to have more than on/off values.
 - There are only 20 registered ssxx features, but 99 cvxx features.
 - Some apps (MS Word for example) assume that users would need to turn on only one ssxx feature at a time.
-- Not as many apps support cvxx [yet].
+- Not as many apps support cvxx (yet).
 
 ### GSUB only
 
