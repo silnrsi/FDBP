@@ -18,6 +18,8 @@ The most effective font names (those seen in application menus, etc.) have a few
 - They do not include specific script or language names. If a font family has multiple language-specific versions, then some indication of the language (such as an [Ethnologue] code), may be added, as in "Anaconda GDX".
 - They may include spaces, but not numerals or any punctuation. There are some rare situations in which numbers can cause technical problems.
 
+New fontnames should be checked for conflicts with existing fonts. The easiest way to do that is to search on [namecheck.fontdata.com].
+
 ## Font filenames
 
 An individual font file is typically no different from other files in an operating system, and is (for the most part) only bound by the limitations on legal names in that operating system. **However there is a pattern of font file naming that has become reasonably common, and that we recommend:**
@@ -55,4 +57,5 @@ and Anaconda Pro:
 [ScriptSource blog post regarding font naming recommendations]
 
 [Ethnologue]: http://www.ethnologue.com/
+[namecheck.fontdata.com]: http://namecheck.fontdata.com
 [ScriptSource blog post regarding font naming recommendations]: http://scriptsource.org/cms/scripts/page.php?item_id=entry_detail&uid=k7dwx5fhnz
