@@ -13,7 +13,10 @@ For example, a font designer who is drawing glyphs needs to know different thing
 
 The most important background knowledge that all those involved in font development need to have is an understanding of the differences and interrelationships between characters, keystrokes, codepoints and glyphs. Chapter 2 of the online book [Implementing Writing Systems][IWSc2] is an excellent and thorough resource.
 
+It is also important to understand the basic contents and structure of an OpenType/TrueType font. [An Introduction to TrueType Fonts][TTIntro] provides a brief orientation for designers and engineers.
+
 We try to provide references to documents that will provide you with this background information.
 If you find that we've assumed some knowledge that made the discussion confusing, we invite you to let us know and we'll try to provide more information.
 
 [IWSc2]: http://scripts.sil.org/IWS-Chapter02
+[TTIntro]: http://scripts.sil.org/IWS-Chapter08
