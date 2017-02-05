@@ -16,6 +16,8 @@ The most effective font names (those seen in application menus, etc.) have a few
 - They are unique to the particular font family.
 - They do not include "Unicode", as most fonts are Unicode-encoded. If the font is _not_ Unicode-encoded, then an indication of that may be added to the name, as in "Anaconda L" (for legacy).
 - They do not include specific script or language names. If a font family has multiple language-specific versions, then some indication of the language (such as an [Ethnologue] code), may be added, as in "Anaconda GDX".
+- They are not strongly geographic, such as the name of a province or city. In some situations a font named after a particular place can cause people in other areas to not use it.
+- They are not references to particular people, such as political leaders or recent cultural heroes. Legendary or historic names are much better, as long as they are not strongly exclusive to a certain subculture.
 - They may include spaces, but not numerals or any punctuation. There are some rare situations in which numbers can cause technical problems.
 
 New fontnames should be checked for conflicts with existing fonts. The easiest way to do that is to search on [namecheck.fontdata.com].
