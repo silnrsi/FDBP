@@ -43,6 +43,23 @@ In addition to these visual design programs there are other applications and uti
 - [Tools from TypeSupply][TypeSupply]
 - [pysilfont]
 
+## UFO Normalization
+
+A weakness of the UFO format is that there is no normalized form. The ordering and normal default settings for various elements can differ between applications. The unfortunate result is that opening a UFO with an app, changing one point coordinate, then saving, can result in hundreds of changes, even to files seemingly unrelated to the single coordinate change. This makes source code version control very difficult.
+
+The solution is to define a *normalized* form and always *normalize* the UFO prior to committing any changes to a source code repository (such as one on Github). This will ensure that the master version is always in normalized form, and any changes can be easily compared.
+
+The [pysilfont] project provides UFO normalization through the `UFOconvert` command. After installing [pysilfont], the workflow then becomes:
+
+- Check out (or clone) project from source code repository
+- Open UFO in editing application
+- Save changes
+- Run UFOconvert on the UFO with the command `UFOconvert filename.ufo`
+- Review changes via your version control client
+- Commit your changes
+
+The normalization scheme imposed by UFOconvert has been reviewed by many people and although it is not a standard, it is reasonably well accepted by those who care about UFO normalization. **We recommend that any UFO-based font projects stored in version control repositories always store the UFO in normalized form as set by UFOconvert.**
+
 ## Example projects
 
 Adobe has a number of public projects that are based on UFO. [Source Sans Pro] is a good example.
