@@ -31,14 +31,18 @@ Fonts have a version number set in two locations:
 - `head` table
 - `name` table
 
-FontLab (in the Font Info dialog) and FontForge (go to _Element > Font Info > PS Names_) have fields for both tables. Glyphs has one field for both tables.
+FontLab (in the Font Info dialog) and FontForge (go to _Element > Font Info > PS Names_) have fields for both tables. Glyphs has one field for both tables. In UFO sources the information is held in three keys.
 
-| | FontLab | Glyphs | FontForge |
-| --- | --- | --- | --- |
-| `head` table | Complete Version record | Version | sfnt Version |
-| `name` table | TrueType Version record | Version | Version |
+| | FontLab | Glyphs | FontForge | UFOv2 |
+| --- | --- | --- | --- | --- |
+| `head` table | Complete Version record | Version | sfnt Version | versionMajor, versionMinor |
+| `name` table | TrueType Version record | Version | Version | openTypeNameVersion |
 
-**We recommend that the version `x.yyy` be the same in both tables.**
+**We recommend that the version `x.yyy` be the same in both tables, and that the string in the `name` table use the form `Version x.yyy`.**
+
+## Development versions
+
+If the font is an alpha or beta development version, **we recommend that `alpha#` or `beta#` be added to the end of the `name` table string**, as in `Version 5.002 beta2`. This should only be added to the `name` table entry, not the `head` table.  
 
 [Semver]: http://semver.org/
 
