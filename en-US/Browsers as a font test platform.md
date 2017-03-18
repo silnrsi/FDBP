@@ -8,9 +8,7 @@ title: Using Browsers for no-install font testing
 shorttitle: Browsers as a test platform
 ---
 
-# Using Browsers for No-Install Font Testing
-
-Because modern browsers support `@font-face`, you can test a font without actually installing it in your system. This is handy, especially for comparing different versions of the same font and for systems, like Windows, where font install isn’t quite as reliable as one might like.
+Because modern browsers support `@font-face`, you can test a font without actually installing it in your system. This is handy especially for comparing different versions of the same font and for systems, like Windows, where font install isn’t quite as reliable as one might like.
 
 With all source documents, stylesheets, and fonts to be tested on your local computer rather than a web server, this no-install testing can provide for rapid build and test cycles.
 
@@ -52,21 +50,21 @@ Because Firefox does integrity checks on any `@font-face` fonts, you can get the
 
 ![OT-Sanitizer-error](images/Firefox-OTSanitizer-error.png "OT Sanitizer error")
 
-which shows that OT Sanitizer didn’t like the GPOS table.
+which shows that OT Sanitizer didn’t like the `GPOS` table.
 
 To view the Browser Console, press Ctl-Shift-J or click the hamburger icon then `Developer` -> `Browser Console`.
 
 ### What font is being used?
 If you are not sure what font is actually being used for some text element in your document, you can find out with the Element Inspector. Ctl-Shift-C or press the hamburger icon then `Developer` -> `Inspector`. Finally, click on some text and look in the lower right corner of the Inspector for the Fonts panel:
 
-![Firefox-Font-Inspector](images/FireFox-font-inspector.jpg "FireFox Element Inspector Fonts panel")
+![Firefox-Font-Inspector](images/FireFox-font-inspector.jpg "Firefox Element Inspector Fonts panel")
 
 If the font panel is not visible, see Useful Configuration Options, above.
 
 ### Oops — Font Caching!
 
 I had a problem with a "downloaded" (@font-face) font not behaving properly in Firefox even after making sure the css identified the corrected version of the font.
-As discussed in [Bug 816483](https://bugzilla.mozilla.org/show_bug.cgi?id=816483),  FFx v20.0 and later cache downloaded fonts (for a while) to speed up display of websites (e.g., newspapers) that use the same webfonts on lots of pages. Unfortunately, when this font caching was first introduced, there was no way to get FireFox to reload the font in case, for example, you had just built a new version. Starting with FFx v24.0, cached webfonts can be re-downloaded when the user performs a "shift" reload (hold shift key and press Reload, or for Windows users, ctl-F5).
+As discussed in [Bug 816483](https://bugzilla.mozilla.org/show_bug.cgi?id=816483),  Firefox v20.0 and later cache downloaded fonts (for a while) to speed up display of websites (e.g., newspapers) that use the same webfonts on lots of pages. Unfortunately, when this font caching was first introduced, there was no way to force Firefox to reload the font in case, for example, you had just built a new version. Starting with Firefox v24.0, cached webfonts are reloaded when the user performs a "shift" reload (hold shift key and press Reload, or for Windows users, ctl-F5).
 
 ### Graphite and OT feature testing
 
@@ -80,7 +78,7 @@ By default Chrome does not allow access to certain types of *local* files -- eve
 
 To override this behaviour you have to start Chrome with a particular command line option. To do this:
 
-* You must first stop *all *Chrome processes. So close all Chrome windows and any site-specific Chrome browser windows.
+* You must first stop *all* Chrome processes. So close all Chrome windows and any site-specific Chrome browser windows.
 * Launch Chrome with the `--allow-file-access-from-files` option.  For Windows you can set up a Chrome shortcut using:
     * Target: `"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-file-access-from-files`
     * Start in: `"C:\Program Files (x86)\Google\Chrome\Application"`
