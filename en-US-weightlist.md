@@ -69,6 +69,7 @@ Page names proceeded by --- are anticipated future additions.
 | 685    |8.7.2  | --- FTML                                   |
 | 690    |8.8    | --- Testing tools                          |
 | 691    |8.8.1  | --- MSFV, OTS, etc                         |
+| 692    |8.8.2  | Browsers as test platforms                 |
 | 700    |9      | Production and Distribution                |
 | 710    |9.1    | --- Source Management                      |
 | 720    |9.2    | --- Release Package Structures             |
