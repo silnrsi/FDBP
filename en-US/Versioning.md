@@ -22,7 +22,7 @@ You _could_ use a version number based on [semantic versioning][Semver] which ha
 - _m_ is the minor version
 - _pp_ is the patch version
 
-to connect these two concepts. He does not, however, specify what these values might represent in a project. **Developers may choose to use these however they wish, but we've chosen to use a flexible version of this in the form of _M.nnn_ ** where
+to connect these two concepts. He does not, however, specify what these values might represent in a project. **Developers may choose to use these however they wish, but we've chosen to use a flexible version of this in the form of _M.nnn_ where**
 
 - _M_ is the major version
 - _nnn_ is the minor version
@@ -36,15 +36,15 @@ Version information in stored in [two locations within a font][OTSpec]:
 - `head` table - two numbers (majorVersion and minorVersion as above)
 - `name` table - a longer string that can also contain additional information
 
-The `head` table version numbers may be the only data that operating systems and installation routines use to compare multiple font versions and choose the most recent, so **it is important that if two fonts have differences they should have different `head` table versions**. These values may only be numbers. 
+The `head` table version numbers may be the only data that operating systems and installation routines use to compare multiple font versions and choose the most recent, so **it is important that if two fonts have differences they should have different `head` table versions**. These values can only be numbers. 
 
-The `name` table version information is a string of text that can contain numbers, letters, and punctuation. **We recommend that this string have three parts, separated by spaces, in the form `Version _M.nnn_ _extrainfo_`** where
+The `name` table version string is text that can contain numbers, letters, and punctuation. **We recommend that this string have three parts, separated by spaces, in the form** `Version M.nnn extrainfo` where
 
 - `Version` is just the word "Version"
-- `_M.nnn_` is the major.minor version number
-- `_extrainfo_` is any additional text that may be useful to the user
+- `M.nnn` is the major.minor version number
+- `extrainfo` is any additional text that may be useful to the user
 
-This `_extrainfo_` may be a build number, a test version indicator such as 'beta 3', a date or time stamp, or any other brief bit of information that can help the user know further information about this particular version. **We recommend, however, that developers do not use this additional info as the only indicator that two fonts are different. Only the _M.nnn_ version number should be used to differentiate between versions.** Some operating systems show the `name` table version to users, but may not look at it when comparing font version numbers.
+This `extrainfo` may be a build number, a test version indicator such as 'beta 3', a date or time stamp, or any other brief bit of information that can help the user know further information about this particular version. **We recommend, however, that developers do not use this additional info as the only indicator that two fonts are different. Only the _M.nnn_ version number should be used to differentiate between versions.** Some operating systems show the `name` table version to users, but may not look at it when comparing font version numbers.
 
 Examples of version information in different styles:
 
@@ -66,13 +66,15 @@ Development versions may have indicators such as _alpha_ or _beta_ in the versio
 
 ## How to set the version number and version string
 
-In UFO sources the information is held in three keys in `fontinfo.plist`. FontLab (in the Font Info dialog) and FontForge (go to _Element > Font Info > PS Names_) have fields for both tables.
+In UFO sources the information is held in three keys in `fontinfo.plist`. FontLab (in the _Font Info_ dialog) and FontForge (go to _Element > Font Info > PS Names_) have fields for both tables.
 
 By default, Glyphs only provides a way to set the Version major and minor numbers (in the _Font Info > Font_ panel). However there is a way to set the version string in that panel:
 
 - Click on the + sign next to _Custom Parameter_
 - Under _Property_ choose _versionString_
 - Type the version string into the _Value_ field
+
+Here is a summary of where to set version numbers and version strings:
 
 | | FontLab | Glyphs | FontForge | UFOv2 |
 | --- | --- | --- | --- | --- |
