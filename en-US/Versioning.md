@@ -24,6 +24,8 @@ You _could_ use a version number based on [semantic versioning][Semver] which ha
 
 to connect these two concepts. He does not, however, specify what these values might represent in a project. We've chosen to use a change in _M_ (major) and _m_ (minor) to reflect significant changes in the functionality of the font and use _pp_ (patch) to indicate both small maintenance fixes (as in 6.301) and work leading up to a major/minor release (such as 6.381, leading up towards 6.400)
 
+Google recommends that the major version value be greater than zero for any fonts that are widely distributed.
+
 ## Location of the version number and version string
 
 Version information in stored in [two locations within a font][OTSpec]:
@@ -31,7 +33,7 @@ Version information in stored in [two locations within a font][OTSpec]:
 - `head` table - two numbers (majorVersion and minorVersion as above)
 - `name` table - a longer string that can also contain additional information
 
-The `head` table version numbers may be the only data that operating systems and installation routines use to compare multiple font versions and choose the most recent, so **it is important that if two fonts have differences they should have different `head` table versions**. These values can only be numbers. 
+The `head` table version numbers may be the only data that operating systems and installation routines use to compare multiple font versions and choose the most recent, so **it is important that if two fonts have differences they should have different `head` table versions**. These values can only be numbers.
 
 The `name` table version string is text that can contain numbers, letters, and punctuation. **We recommend that this string have three parts, separated by spaces, in the form** `Version M.mpp extrainfo` where
 
@@ -81,4 +83,4 @@ Here is a summary of where to set version numbers and version strings:
 
 [Twardoch]: https://groups.google.com/d/msg/googlefonts-discuss/w6-i0Opikbc/nlFPEibsCQ8J
 
-[OTSpec]: https://www.microsoft.com/en-us/Typography/OpenTypeSpecification.aspx 
+[OTSpec]: https://www.microsoft.com/en-us/Typography/OpenTypeSpecification.aspx

@@ -21,15 +21,15 @@ In practice, most foundries use UFO2, but may store application- or foundry-spec
 
 **We currently recommend storing UFO sources in UFO2 format, and relying on a UFO converter tool to move data between formats.**
 
-There are various discussions going on towards future UFO versions beyond 3, by both the original UFO authors and others, but there is no clear successor at this point.
+There are various discussions going on concerning future UFO versions beyond 3, by both the original UFO authors and others, but there is no clear successor at this point.
 
 ## Application support
 
 Every major font design program supports UFO, but to varying degrees.
 
-- [Robofont] provides the most seamless and native support.
-- [Glyphs] can use UFO as a native format.
-- [FontForge] can import and export UFOs, including the UFO3 format.
+- [Robofont] provides the most seamless and native support (requires Mac OS X 10.9 or later, though older versions are available for OS X 10.6 or later; commercial).
+- [Glyphs] can use UFO as a native format (requires Mac OS X 10.9 or later; commercial).
+- [FontForge] can import and export UFOs, including the UFO3 format (available for Windows, Mac, Linux; free).
 
 **We have used each of these successfully in UFO development, and can recommend their use. The key to successful use is to store UFOs in a normalized format then re-normalize them after editing them.**
 
