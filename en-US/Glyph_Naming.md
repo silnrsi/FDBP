@@ -11,7 +11,10 @@ title: Glyph Naming
 
 **Developers may choose to manage two sets of glyph names: *working* glyph names ("friendly" names used during development) and *production* glyph names (used in the shipping font).**
 
-**Per the [Adobe Glyph List Specification \[AGL\]][AGL] specification, glyph names, whether working names or production names, must be no longer than 31 characters and must be entirely composed of characters from the following set: A–Z, a–z, 0–9, . (period, U+002E FULL STOP), and _ (underscore, U+005F LOW LINE).**
+**Per the [Adobe Glyph List Specification \[AGL\]][AGL] specification, glyph names, whether working names or production names, should be no longer than 31 characters, must be entirely composed of characters from the following set: A–Z, a–z, 0–9, . (period, U+002E FULL STOP) and _ (underscore, U+005F LOW LINE), and must not start with a digit.** Note however that 
+- Adobe Font Development Kit \[AFDKO\] [Feature File Specification][FEA] allows name length up to 63 but requires that names, with the exception of `.notdef`, must not start with a digit or a period. 
+- [ISO/IEC 14496-22 "Open Font Format"][OFF] recommends that names, with the exception of `.notdef` and `.null`, must start with letter.
+- Various font tools may have other restrictions but such are not derived from any official font specifications.
 
 **For glyphs that can end up in the final output of rendered text, the production glyph names should be selected from the [Adobe Glyph List for New Fonts \[AGLFN\]][AGLFN].**
 
@@ -58,3 +61,5 @@ Note that it doesn't matter whether one is talking about working names or produc
 [`post`]: https://www.microsoft.com/typography/otspec/post.htm
 [AGL]: https://github.com/adobe-type-tools/agl-specification
 [AGLFN]: https://github.com/adobe-type-tools/agl-aglfn
+[OFF]: http://standards.iso.org/ittf/PubliclyAvailableStandards/c066391_ISO_IEC_14496-22_2015.zip
+[FEA]: https://cdn.rawgit.com/adobe-type-tools/afdko/master/FDK/Technical%20Documentation/OpenTypeFeatureFileSpecification.html#2.f.i
