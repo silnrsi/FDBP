@@ -10,7 +10,64 @@ Links to the OpenType specification, as well as other font specifications, can b
 
 ## Lookup Orders
 
-(This section has not yet been written.)
+The OpenType specification suggests that software should:
+> assemble all lookups from the set of chosen features, and apply the lookups in the order given in the LookupList table.
+
+However in actual implementations this isn't how it is usually done. Instead, features are divided into sets, and the sets are processed in a specific order. Within a set, all the lookups associated with the included features are executed (in lookup order) before moving on to the next set of features.
+
+It is important, therefore, that font developers know how features are divided into sets, and the order in which these sets are executed. To complicate matters, this is:
+- not always consistent among shaping engines
+- script-specific, and
+- not well documented.
+
+The most useful information is gleaned by reading the Harfbuzz code since (a) the code is opensource and thus accessible, and (b) Harfbuzz tries to be compatible with Microsoft's Uniscribe.
+
+The following tables attempt to document what the Harfbuzz code indicates for GSUB execution. Each row represents a set of features, each feature identified by its 4-character tag.
+
+||Default shaper|
+|---|---|
+|GSUB|ltra ltrm frac numr dnom ccmp locl rlig calt clig liga rclt _userfeatures_|
+|GPOS|mark mkmk curs kern|
+
+||Arabic|Syriac|
+|---|---|---|
+|GSUB|rtla rtlm frac numr dnom|rtla rtlm frac numr dnom|
+|| |stch|
+||ccmp locl|ccmp locl|
+||isol|isol|
+||fina|fina|
+|||fin2|
+|||fin3|
+||medi|medi|
+|||med2|
+||init|init|
+||rlig|rlig|
+||rclt calt|rclt calt|
+||mset rlig clig liga|mset rlig clig liga|
+||_userfeatures_|_userfeatures_|
+|GPOS| mark mkmk curs kern| mark mkmk curs kern|
+
+||Indic|_notes_|
+|---|---|-|
+|GSUB|ltra ltrm frac numr dnom||
+||ccmp locl||
+||nukt||
+||akhn||
+||rphf||
+||rkrf||
+||pref||
+||blwf||
+||abvf||
+||half||
+||pstf||
+||vatu||
+||cjct||
+||cfar||
+||init pres abvs blws psts haln calt clig||
+||_userfeatures_||
+|GPOS|curs kern dist abvm blwm|kern not used in Khmer|
+
+where _userfeatures_ includes everything else that the user (or CSS) might have requested, such as dlig, ssxx, cvxx, smcp, onum, etc.
 
 ## Language Tags
 
@@ -41,7 +98,7 @@ Stylist Sets (ssxx tags) are preferred when systematically related changes affec
 
 Having said that, there are some technical and practical distinctions that may require violating these guidelines:
 
-- The cvxx tags utilize GSUB “alternate” (type 3) lookups, thus allowing a feature to have more than on/off values.
+- The cvxx tags can utilize GSUB “alternate” (type 3) lookups, thus allowing a feature to have more than on/off values.
 - There are only 20 registered ssxx features, but 99 cvxx features.
 - Some apps (MS Word for example) assume that users would need to turn on only one ssxx feature at a time.
 - Not as many apps support cvxx (yet).
