@@ -11,9 +11,9 @@ This subsection describes one tool for creating composite glyphs.
 
 ## Composite building tool
 
-There is a python script named ```UFObuildComp.py``` found in the [Pysilfont][pysilfont] collection. It accepts a list of composite definitions and constructs a composite glyph for each definition line. For example,
+There is a python script named ```psfbuildcomp.py``` found in the [Pysilfont][pysilfont] collection. It accepts a list of composite definitions and constructs a composite glyph for each definition line. For example,
 
-```python UFObuildComp.py -i composites.txt -r V CharisSIL-Regular.ufo ```
+```python psfbuildcomp.py -i composites.txt -r V CharisSIL-Regular.ufo ```
 
 * reads composite definitions from the input (```-i```) file named ```composites.txt```
 * uses "verbose" (```-r V```) option for recording progress in the log file

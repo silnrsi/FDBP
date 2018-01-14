@@ -49,16 +49,16 @@ A weakness of the UFO format is that there is no normalized form. The ordering a
 
 The solution is to define a *normalized* form and always *normalize* the UFO prior to committing any changes to a source code repository (such as one on Github). This will ensure that the master version is always in normalized form, and any changes can be easily compared.
 
-The [pysilfont] project provides UFO normalization through the `UFOconvert` command. After installing [pysilfont], the workflow then becomes:
+The [pysilfont] project provides UFO normalization through the `psfnormalize` command. After installing [pysilfont], the workflow then becomes:
 
 - Check out (or clone) project from source code repository
 - Open UFO in editing application
 - Save changes
-- Run UFOconvert on the UFO with the command `UFOconvert filename.ufo`
+- Run psfnormalize on the UFO with the command `psfnormalize filename.ufo`
 - Review changes via your version control client
 - Commit your changes
 
-The normalization scheme imposed by UFOconvert has been reviewed by many people and although it is not a standard, it is reasonably well accepted by those who care about UFO normalization. **We recommend that any UFO-based font projects stored in version control repositories always store the UFO in normalized form as set by UFOconvert.**
+The normalization scheme imposed by psfnormalize has been reviewed by many people and although it is not a standard, it is reasonably well accepted by those who care about UFO normalization. **We recommend that any UFO-based font projects stored in version control repositories always store the UFO in normalized form as set by psfnormalize.**
 
 ## Example projects
 
