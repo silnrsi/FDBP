@@ -26,11 +26,11 @@ If an application wants to provide a user interface for these optional behaviors
 
 For behaviors defined by a standard such as OpenType, suitable text for UI strings can easily obtained from the standard itself.
 
-But what to do for that last category &mdash; features whose behavior is defined entirely by logic within the font? The answer is that the _font itself must provide the text_. The font vendor should, therefore, ensure that their fonts contain all needed UI strings.
+But what to do for that last category &mdash; features whose behavior is defined entirely by logic within the font? The answer is that the _font itself must provide the text_. Font vendors should, therefore, ensure that their fonts contain all needed UI strings.
 
 ### Coordinating OpenType and Graphite
 
-For fonts that contain both Graphite and OpenType logic, it is usually the case that many of the features are have the same purpose and result in both technologies. For such features it is best practice if the human readable strings are the same for corresponding Graphite and OpenType features. So for example, don’t call the feature *Literacy Alternates* in Graphite and *Literacy alternates* in OpenType.
+For fonts that contain both Graphite and OpenType logic, it is usually the case that many of the features have the same purpose and result in both technologies. For such features it is best practice if the human readable strings are the same for corresponding Graphite and OpenType features. So for example, don’t call the feature *Literacy Alternates* in Graphite and *Literacy alternates* in OpenType.
 
 Not only does using the same UI strings make sense from the point of view of the user experience, it also makes the font smaller since one copy of each UI string can be shared by both Graphite and OpenType.
 
@@ -75,7 +75,6 @@ For OpenType, the only two features that need UI strings are the [Stylistic Sets
 It is important to keep in mind fundamental differences between Stylist Sets and Character Variants:
 
 * Stylistic Sets are, by definition, binary features &mdash; a given Stylistic Set is either on or off.
-
 * Character Variants can be binary, but they can also be defined with more than two possible values.
 
 Similarly, the UI strings that can be provided for Stylist Sets are different than that for Character Variants:
@@ -142,9 +141,7 @@ Here is the same example with some French localization added:
 While feature name and value strings are the minimum we should be providing, OpenType Character Variant features can provide additional data that may be useful within a UI:
 
 * *Tool tip*: a string that an application can use as a tool tip in the UI
-
 * *Sample Text*: a string that illustrates the effect of the feature
-
 * *USV list*: not a string, but rather a list of Unicode Scalar Value of the characters for which this feature provides glyph variants. (NB: This is not an array of strings, therefore features which affect character sequences can’t really be represented by this entry).
 
 The XML control file provided as input to `ttffeatparms` can provide all of this additional information, but at the present time we are unaware of any application that can use any of it. Therefore we consider this extra data to be optional and low priority.
@@ -154,7 +151,6 @@ The XML control file provided as input to `ttffeatparms` can provide all of this
 The desired sequence is as follows:
 
 * Compile OpenType (and, if used, Graphite) features into the font before adding OpenType UI strings
-
 * Add OpenType UI strings into the font. The basic command to do this looks as follows:
 
 ```
