@@ -86,13 +86,13 @@ Similarly, the UI strings that can be provided for Stylist Sets are different th
   * The names of the various values, e.g. *Small bowl, Large bowl* and *Small gamma*.
 
 
-One implication of the above is that when Stylistic Set features are used, their UI string should have an obvious yes/no meaning. For example, *Barred bowl forms* and *Vietnamese-style diacritics* are good names &mdash; the user can predict what turning on this feature is going to do &mdash; whereas *alternate noon* might not be such a good name.   
+One implication of the above is that the UI string for a Stylistic Set feature should have an obvious yes/no meaning. For example, *Barred bowl forms* and *Vietnamese-style diacritics* are good names &mdash; the user can predict what turning on this feature is going to do &mdash; whereas *alternate noon* might not be such a good name.   
 
 ### How to add UI Strings to OpenType
 
 For OpenType, we’d like to be able to define the UI strings via the FEA source files. The Adobe FDK documentation defines the syntax and provides examples for both [Descriptive names for Stylistic Set ('ss01 - ss20') features][FDKSSXX] and [UI Label names for Character Variant 'cv01 - cv99') features][FDKCVXX].
 
-Unfortunately, as of this writing, not all FEA compilers support the full syntax. In particular, Google's FontTools supports Stylist Sets but not Character Variants (see [Issue #860][FTCVXXBUG].) And even if they did, neither the Graphite compiler nor existing FEA compilers are clever enough to re-use UI strings added to the font by the other, which means fonts that include both Graphite and OpenType logic will have two sets of UI Strings, bloating the font size.
+Unfortunately, as of this writing, not all FEA compilers support the full syntax. In particular, Google's fontTools supports Stylist Sets but not Character Variants (see [Issue #860][FTCVXXBUG].) And even if they did, neither the Graphite compiler nor existing FEA compilers are clever enough to re-use UI strings added to the font by the other, which means fonts that include both Graphite and OpenType logic will have two sets of UI Strings, bloating the font size.
 
 Therefore, at present we are recommending the `ttffeatparms` utility from [FontUtils][FONTUTILS]. To get help with this utility, at the command line type:
 
