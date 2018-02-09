@@ -1,8 +1,8 @@
 ---
-published: true
+published: false
 layout: bookpage
 weight: 490
-outlevel: 6.3
+outlevel: 6.5
 category: Shaping and Rendering
 title: User Interface Strings
 ---
@@ -80,61 +80,61 @@ It is important to keep in mind fundamental differences between Stylist Sets and
 
 Similarly, the UI strings that can be provided for Stylist Sets are different than that for Character Variants:
 
-* The main UI strings that can be provided for cvnn features are:
-  * The name of the feature itself, e.g, *Rams horn alternates*
-  * The names of the various values, e.g. *Small bowl, Large bowl* and *Small gamma*
-
 * The only UI string that can be provided for ssnn features is:
   * The name of the feature; there is no way to provide names for the values.
+* The UI strings that can be provided for cvnn features include:
+  * The name of the feature itself, e.g., *Rams horn alternates*
+  * The names of the various values, e.g. *Small bowl, Large bowl* and *Small gamma*.
 
-One implication of the above is that when Stylistic Set features are used, their UI string should have an obvious yes/no meaning. For example, *Barred bowl forms* and *Vietnamese-style diacritics* are good names &mdash; the user can predict what turning on this feature is going to do.   
+
+One implication of the above is that when Stylistic Set features are used, their UI string should have an obvious yes/no meaning. For example, *Barred bowl forms* and *Vietnamese-style diacritics* are good names &mdash; the user can predict what turning on this feature is going to do &mdash; whereas *alternate noon* might not be such a good name.   
 
 ### How to add UI Strings to OpenType
 
 For OpenType, we’d like to be able to define the UI strings via the FEA source files. The Adobe FDK documentation defines the syntax and provides examples for both [Descriptive names for Stylistic Set ('ss01 - ss20') features][FDKSSXX] and [UI Label names for Character Variant 'cv01 - cv99') features][FDKCVXX].
 
-Unfortunately, as of this writing, not all FEA compilers support the full syntax. In particular, Google's FontTools supports Stylist Sets but not Character Variants. (See [Issue #860][FTCVXXBUG].) And even if they did, neither the Graphite compiler nor existing FEA compilers are clever enough to re-use UI Strings added to the font by the other, which means fonts that include both Graphite and OpenType logic will have two sets of UI Strings, bloating the font size.
+Unfortunately, as of this writing, not all FEA compilers support the full syntax. In particular, Google's FontTools supports Stylist Sets but not Character Variants (see [Issue #860][FTCVXXBUG].) And even if they did, neither the Graphite compiler nor existing FEA compilers are clever enough to re-use UI strings added to the font by the other, which means fonts that include both Graphite and OpenType logic will have two sets of UI Strings, bloating the font size.
 
-Therefore, at present we are recommending the **ttffeatparms** utility from [FontUtils][FONTUTILS]. To get help with this utility, at the command line type:
+Therefore, at present we are recommending the `ttffeatparms` utility from [FontUtils][FONTUTILS]. To get help with this utility, at the command line type:
 
 ```
 ttffeatparms -h
 ```
 OpenType UI strings are coded in an xml control file. Here is a simple example that covers one Stylist Set and one Character Variant feature, with UI strings just in English:
 ```
-  <?xml version="1.0" encoding="UTF-8"?>
-    <featureparams>
-      <sset feat="ss02">
-        <name><nstring lang="en">UI string for SS02</nstring></name>
-      </sset>
-      <cvar feat="cv01">
-        <name><nstring>Jha alternates</nstring></name>
-        <npstring lang="en">First named param for cv01</npstring>
-        <npstring lang="en">Second named param for cv01</npstring>
-        <npstring lang="en">Third named param for cv01</npstring>
-      </cvar>
-    </featureparams>
+<?xml version="1.0" encoding="UTF-8"?>
+  <featureparams>
+    <sset feat="ss02">
+      <name><nstring lang="en">UI string for SS02</nstring></name>
+    </sset>
+    <cvar feat="cv01">
+      <name><nstring>Jha alternates</nstring></name>
+      <npstring lang="en">First named param for cv01</npstring>
+      <npstring lang="en">Second named param for cv01</npstring>
+      <npstring lang="en">Third named param for cv01</npstring>
+    </cvar>
+  </featureparams>
 ```
 Here is the same example with some French localization added:
 ```
-  <?xml version="1.0" encoding="UTF-8"?>
-    <featureparams>
-        <sset feat="ss02">
-          <name>
-            <nstring lang="en">UI string for SS02</nstring>
-            <nstring lang="fr">nom de ss02</nstring>
-          </name>
-        </sset>
-        <cvar feat="cv01">
-          <name><nstring>Jha alternates</nstring></name>
-          <npstring lang="en">First named param for cv01</npstring>
-          <npstring lang="en">Second named param for cv01</npstring>
-          <npstring lang="en">Third named param for cv01</npstring>
-          <npstring lang="fr">Premier paramètre nommé pour cv01</npstring>
-          <npstring lang="fr">Deuxième paramètre nommé pour cv01</npstring>
-          <npstring lang="fr">Troisième paramètre nommé pour cv01</npstring>
-        </cvar>
-      </featureparams>
+<?xml version="1.0" encoding="UTF-8"?>
+  <featureparams>
+    <sset feat="ss02">
+      <name>
+        <nstring lang="en">UI string for SS02</nstring>
+        <nstring lang="fr">nom de ss02</nstring>
+      </name>
+    </sset>
+    <cvar feat="cv01">
+      <name><nstring>Jha alternates</nstring></name>
+      <npstring lang="en">First named param for cv01</npstring>
+      <npstring lang="en">Second named param for cv01</npstring>
+      <npstring lang="en">Third named param for cv01</npstring>
+      <npstring lang="fr">Premier paramètre nommé pour cv01</npstring>
+      <npstring lang="fr">Deuxième paramètre nommé pour cv01</npstring>
+      <npstring lang="fr">Troisième paramètre nommé pour cv01</npstring>
+    </cvar>
+  </featureparams>
 ```
 
 ## Beyond feature and value names
@@ -147,9 +147,9 @@ While feature name and value strings are the minimum we should be providing, Ope
 
 * *USV list*: not a string, but rather a list of Unicode Scalar Value of the characters for which this feature provides glyph variants. (NB: This is not an array of strings, therefore features which affect character sequences can’t really be represented by this entry).
 
-The XML control file provided as input to ttffeatparms can provide all of this additional information, but at the present time we are unaware of any application that can use any of it. Therefore we consider this extra data to be optional and low priority.
+The XML control file provided as input to `ttffeatparms` can provide all of this additional information, but at the present time we are unaware of any application that can use any of it. Therefore we consider this extra data to be optional and low priority.
 
-## Compile UI strings into each font
+## Adding OpenType UI strings into a font
 
 The desired sequence is as follows:
 
@@ -170,6 +170,8 @@ Because UI strings have always been part of Graphite, some Graphite-enabled apps
 ![Fieldworks font feature UI](images/UI-strings-in-use.png)
 
 As of this writing, the only applications we know about that supports UI strings for OpenType are some of Adobe's Creative Cloud suite (such as InDesign), but even those support only UI strings for Stylistic Sets. Most SIL fonts include UI strings, and SIL applications are planning to add support.
+
+Please let us know if you become aware of other applications that support UI strings so we can include them here.
 
 [GDL]:https://github.com/silnrsi/grcompiler/blob/master/doc/GDL.pdf
 [CVXX]:https://www.microsoft.com/typography/otspec/features_ae.htm#cv01-cv99

@@ -48,6 +48,7 @@ Page names proceeded by --- are anticipated future additions.
 | 420    |6.2    | --- Graphite                               |
 | 430    |6.3    | OpenType                                   |
 | 480    |6.4    | --- Universal Shaping Engine               |
+| 490    |6.5    | User Interface String                      |
 | 500    |7      | Optimization                               |
 | 510    |7.1    | --- Hinting                                |
 | 513    |7.1.1  | --- Setting FL autohint parameters         |
