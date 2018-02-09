@@ -1,10 +1,10 @@
 ---
-published: false
+published: true
 layout: bookpage
 weight: 490
 outlevel: 6.5
 category: Shaping and Rendering
-title: User Interface Strings
+title: User Interface (UI) Strings
 ---
 
 ## Summary of Recommendations
@@ -141,7 +141,7 @@ Here is the same example with some French localization added:
 
 While feature name and value strings are the minimum we should be providing, OpenType Character Variant features can provide additional data that may be useful within a UI:
 
-* *Tool tip: *a string  that an application can use as a tool tip in the UI
+* *Tool tip*: a string that an application can use as a tool tip in the UI
 
 * *Sample Text*: a string that illustrates the effect of the feature
 
