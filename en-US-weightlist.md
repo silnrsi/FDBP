@@ -27,6 +27,7 @@ Page names proceeded by --- are anticipated future additions.
 | 130    |3.3    | Design Metrics                             |
 | 140    |3.4    | Line Metrics                               |
 | 180    |3.5    | --- PANOSE                                 |
+| 190    |3.6    | --- Unicode Ranges                         |
 | 200    |4      | Glyph Metadata                             |
 | 210    |4.1    | Character & Glyph Inventory                |
 | 220    |4.2    | Encoding for Glyphs below U+0020           |
