@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: bookpage
 weight: 190
 outlevel: 3.6
@@ -13,7 +13,7 @@ There are two means within an OpenType font to indicate which scripts and Unicod
 
 The [OpenType OS/2 table specification][UnicodeRanges] lists the ranges defined by _ulUnicodeRange_ and which bits must be set to indicate support for that range. Most font editors provide a user interface that lists the ranges and allows you turn ranges on and off, so hacking bit fields is rarely necessary.
 
-According to [Peter Constable][PCTYPOLabs18] the _ulUnicodeRange_ field is rarely used anymore by OSes to determine font script coverage. One major reason is that the field has run out of space, and no new ranges can be added. However there are older systems that still look at this info, so **the _ulUnicodeRange_ bits should be set if the font is intended to support any of the ranges defined in the [spec][UnicodeRanges]**.
+According to [Peter Constable's presentation at TYPO Labs 2018][PCTYPOLabs18] the _ulUnicodeRange_ field is rarely used anymore by OSes to determine font script coverage. One major reason is that the field has run out of space, and no new ranges can be added. However there are older systems that still look at this info, so **the _ulUnicodeRange_ bits should be set if the font is intended to support any of the ranges defined in the [spec][UnicodeRanges]**.
 
 One special case: **If the font includes any supplemental plane characters, then the _Non-Plane 0_ bit (57) should be set. This is true whether or not the character is in a range that has a _ulUnicodeRange_ bit defined**. So in the case of Phoenician, which is in a supplemental plane (10900-1091F) and has a defined bit (58), both that bit and the _Non-Plane 0_ bit (57) should be set.
 
