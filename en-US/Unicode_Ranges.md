@@ -20,7 +20,7 @@ One special case: **If the font includes any supplemental plane characters, then
 
 ## 'meta' table
 
-Because of the above-mentioned limitations of the existing _ulUnicodeRange_ field, the [meta table][MetaTable] was added to the OpenType specification (starting with version 1.8 in 2016). **OpenType fonts should include the 'meta' table describing the languages and scripts for which the font was designed as well as the langauges and scripts that the font is capable of supporting.**
+Because of the above-mentioned limitations of the existing _ulUnicodeRange_ field, the [meta table][MetaTable] was added to the OpenType specification (starting with version 1.8 in 2016). **OpenType fonts should include the 'meta' table describing the languages and scripts for which the font was designed as well as the languages and scripts that the font is capable of supporting.**
 
 
 [UnicodeRanges]: https://docs.microsoft.com/en-us/typography/opentype/spec/os2#ur
