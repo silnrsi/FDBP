@@ -7,7 +7,7 @@ category: Font Metadata
 title: Unicode Ranges
 ---
 
-There are two means within an OpenType font to indicate which scripts and Unicode ranges a font supports: the OpenType _ulUnicodeRange_ bit in the 'OS/2' table and the newer 'meta' table.
+There are two means within an OpenType font to indicate which scripts and Unicode ranges a font supports: the OpenType _ulUnicodeRange_ bits in the 'OS/2' table and the newer 'meta' table.
 
 ## ulUnicodeRange
 
