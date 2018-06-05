@@ -7,7 +7,7 @@ category: Font Metadata
 title: Design Metrics
 ---
 
-The curve shapes, letter widths, diacritic positions, and contextual adjustments in a font are defined in relation to a grid of either 1000 x 1000 units (Postscript and CFF-based OpenType fonts) or 2048 x 2048 units (TrueType and TrueType-based OpenType). Other units-per-em (UPM) values are allowed, but there is very little real justification for doing so, despite what some experts argue. Although CFF-based fonts are supported by most systems, TrueType-based fonts have much better support, especially on older systems. **We recommend that you develop TrueType-based OpenType fonts, and set your UPM value to 2048.** The rest of this discussion on metrics assumes a 2048 UPM grid.
+The curve shapes, letter widths, diacritic positions, and contextual adjustments in a font are defined in relation to a grid of either 1000 x 1000 units (Postscript and CFF-based OpenType fonts) or 2048 x 2048 units (TrueType and TrueType-based OpenType). **Other units-per-em (UPM) values are allowed, but such situations are rare and should be  avoided unless there is a very specific reason to do so (see [Special UPM values](#special-upm-values))**. Although CFF-based fonts are supported by most systems, TrueType-based fonts have much better support, especially on older systems. **We recommend that you develop TrueType-based OpenType fonts, and set your UPM value to 2048.** The rest of this discussion on metrics assumes a 2048 UPM grid.
 
 The 'em' is a unit that has roots in traditional type founding, but is now well removed from that heritage. The idea was that the letters of a font would normally be sized so that every letter of the design could fit within that 'em-square'. That is no longer the case, and the em/UPM is now used to mathematically determine the physical size of a letter when rendered at a particular point size. Adam Twardoch wrote (in a [recovered Typophile post][Twardoch]):
 
@@ -36,6 +36,19 @@ If your glyphs extend higher or lower than these ascender or descender values, t
 If you have set your x-height high and also have long ascenders, then your normal ascenders might end up ‘outside the box’. While not a technical problem, it may mean that your font size really is too large. You may want to reconsider the sizing - but there is no technical reason that requires you to shrink it.
 
 For example, say you decide that you want your font to appear as large as Georgia (about 960 units in a 2048 UPM font), and you set the height of the ‘x’ to 960. But then you also decide to give it long ascenders, much longer than Georgia’s, between 1600-1800, and deep descenders as well. Then it shouldn’t be a surprise that you get lines colliding. You can fix this technically. However, it may be that you’ve simply chosen an oversized x-height for a font that also has long ascenders. You may not be able to have both the perceived size of Georgia and tall, elegant ascenders. **This is a design issue, not a technical one.**
+
+## Special UPM values
+
+It can be useful in certain cases to set the UPM value for a TrueType font to something other than 2048 - specifically 1000. Some of the technical reasons to avoid this are less relevant than in the past, and it's very likely that a TrueType font with a UPM of 1000 will work without problems. **It's still a good idea to use 2048 by default, however, a UPM of 1000 may be appropriate in certain situations:**
+
+- The font is based on some other source font with a UPM size of 1000, and you want to avoid rounding errors in scaling to 2048.
+- You want to import data or metrics from a font with 1000 UPM, such as kerning or hinting.
+- You are working with a team of designers that are all used to working in 1000 UPM and you want to make it easier for everyone to use consistent measurements.
+- When the fonts need to be delivered in multiple technology formats, such as both TrueType and OpenType/CFF.
+
+Some designers have chosen a UPM greater than 2048 (such as 4096) to gain greater design precision, but that is quite rare.
+
+
 
 
 [Twardoch]: http://typophile.com/node/77906
