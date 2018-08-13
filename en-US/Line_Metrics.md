@@ -48,6 +48,10 @@ There is one situation where you may still wish to set the ascender value lower
 
 **It is also good practice to keep the ascender and descender values the same across a font family (R, B, I, BI).** Some font testing tools even report a mismatch between family members as a technical error. If they are not the same, then selecting a word in a paragraph and making it bold or italic may change the line spacing for just that one line - a frustrating and ugly problem. You may, however, set the numbers differently if you have separate font families.
 
+## Other references
+
+* https://github.com/googlefonts/gf-docs/blob/master/VerticalMetrics.md
+* https://typedrawers.com/discussion/2805/font-metrics-settings-for-desktop-and-web-fonts
 
 [Karsten]: http://www.kltf.de/downloads/FontMetrics-kltf.pdf
 
