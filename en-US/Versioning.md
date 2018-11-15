@@ -30,10 +30,12 @@ Google recommends that the major version value be greater than zero for any font
 
 Version information in stored in [two locations within a font][OTSpec]:
 
-- `head` table - two numbers (majorVersion and minorVersion as above)
+- `head` table - a 16.16 decimal number encoded in the `fontRevision` field.
 - `name` table - a longer string that can also contain additional information
 
-The `head` table version numbers may be the only data that operating systems and installation routines use to compare multiple font versions and choose the most recent, so **it is important that if two fonts have differences they should have different `head` table versions**. These values can only be numbers.
+**We recommend that the `head` and `name` tables be consistent in the version information represented therein.**
+
+The `head.fontRevision` number may be the only data that operating systems and installation routines use to compare multiple font versions and choose the most recent, so **it is important that if two fonts have differences they should have different `head.fontRevision` values**.
 
 The `name` table version string is text that can contain numbers, letters, and punctuation. **We recommend that this string have three parts, separated by spaces, in the form** `Version M.mpp extrainfo` where
 
@@ -41,19 +43,29 @@ The `name` table version string is text that can contain numbers, letters, and p
 - `M.mpp` is the major.minorpatch version number
 - `extrainfo` is any additional text that may be useful to the user
 
-This `extrainfo` may be a build number, a test version indicator such as 'beta3', a date or time stamp, or any other brief bit of information that can help the user know further information about this particular version. **We recommend, however, that developers do not use this additional info as the only indicator that two fonts are different. Only the _M.mpp_ version number should be used to differentiate between versions.** Some operating systems show the `name` table version to users, but may not look at it when comparing font version numbers.
+This `extrainfo` may be a build number, a test version indicator such as 'beta3', a date or time stamp, or any other brief bit of information that can help the user know further information about this particular version. **We recommend that developers do not use this additional info as the only indicator that two fonts are different. Only the _M.mpp_ version number should be used to differentiate between versions.** Some operating systems show the `name` table version to users, but may not look at it when comparing font version numbers.
 
-Examples of version information in different styles:
+## Calculating `head.fontRevision`
 
-| majorVersion | minorVersion | `name` version string |
+OpenType does not specify the content of the `head.fontRevision` field, but only that it is a fixed-point number stored with 16 bits before the decimal and 16 bits after.
+Font vendors have been inconsistent in how they encode a font version in such a numeric field. For example is version 1.1 stored as 0x00010001 or 0x00011999 or even 0x00011000 ?
+
+**We recommend the following calculation: Treating the 32 bit `fontRevision` as two 16 bit integers, calculate them as follows:**
+- first 16 bits = _M_
+- second 16 bits = _int( .mpp * 65536 )_
+
+
+## Examples of version information:
+
+| M | mpp | `head.fontRevision` | `name` version string |
 | --- | --- | --- |
-| 1 | 290 | Version 1.290 alpha1 |
-| 1 | 295 | Version 1.295 beta1 |
-| 1 | 296 | Version 1.296 beta2 |
-| 1 | 300 | Version 1.300 |
-| 2 | 101 | Version 2.101 build 693 |
-| 3 | 560 | Version 2.560 20170329-1 |
-| 6 | 101 | Version 6.101 FW bundle |
+| 1 | 290 | 0x00014A3d | Version 1.290 alpha1 |
+| 1 | 295 | 0x00014B85 | Version 1.295 beta1 |
+| 1 | 296 | 0x00014BC6 | Version 1.296 beta2 |
+| 1 | 300 | 0x00014CCC | Version 1.300 |
+| 2 | 101 | 0x000219DB | Version 2.101 build 693 |
+| 3 | 560 | 0x00038F5C | Version 2.560 20170329-1 |
+| 6 | 101 | 0x000619DB | Version 6.101 FW bundle |
 
 ## Development versions
 
