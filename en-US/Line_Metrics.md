@@ -30,7 +30,14 @@ FontForge is particularly misleading: _Element > Font Info > General_ has Ascent
 
 It is possible to carefully calculate and set these values to optimize line spacing for particular environments. Karsten Lücke has an excellent [PDF that goes into great detail][Karsten]. However there is no good solution that works everywhere, so a compromise is best. **We recommend that all Ascender/Ascent values be set to be equal, Descender/Descent value be set to be equal, and LineGap be set to zero.** _Note that the WinDescent value is specified in FontForge (only) as a positive number, while the other Descender values are negative._
 
-The "Cap height" and "x-height" values in some font design programs are not used by any app or OS, but setting them correctly might be helpful, as they may be used as guidelines.
+For example, in UFO3 format font sources (fontinfo.plist) this would mean:
+
+`openTypeHheaAscender = openTypeOS2TypoAscender = openTypeOS2WinAscent = ascender`  
+`openTypeHheaDescender = openTypeOS2TypoDescender = descender`  
+`openTypeOS2WinDescent = -descender`  
+`openTypeHheaLineGap = openTypeOS2TypoLineGap = 0`
+
+The "Cap height" and "x-height" values in some font design programs are not used directly by apps, but setting them correctly might be helpful, as they may be used as guidelines. Recent CSS proposals also hint that setting these correctly in the font will enable improved layout alignment for things like drop caps.
 
 ## Avoiding trouble
 
