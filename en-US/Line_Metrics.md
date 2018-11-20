@@ -59,7 +59,7 @@ There is one situation where you may still wish to set the ascender value lower
 
 The following sources provide alternate methods of setting line metrics. Depending on your particular use these methods may be useful. However the recommendation above remains the most reliable and consistent method of setting consistent line metrics across a broad range of operating system and application versions.
 
-* https://github.com/googlefonts/gf-docs/blob/master/VerticalMetrics.md
+* https://github.com/googlefonts/gf-docs/tree/master/VerticalMetrics
 * https://typedrawers.com/discussion/2805/font-metrics-settings-for-desktop-and-web-fonts
 
 [Karsten]: http://www.kltf.de/downloads/FontMetrics-kltf.pdf
