@@ -35,7 +35,7 @@ Fonttools - a library for manipulating fonts, written in Python. The project inc
 
 ## Pysilfont
 
-This a growing collection of tools, initially  written by members of SIL International’s Non-Roman Script Initiative team, with a broader set of contributors welcome.
+This a growing collection of tools, initially  written by members of SIL International’s Writing Systems Technology team (formerly the Non-Roman Script Initiative), with a broader set of contributors welcome.
 Included are a UFO object library, support for testing fonts and scripts for specific tasks.
 These tools are designed with a UFO-based workflow in mind, though many would also be useful in other workflows.
 
