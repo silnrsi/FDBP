@@ -24,7 +24,7 @@ New fontnames should be checked for conflicts with existing fonts. The easiest w
 
 ## Font filenames
 
-An individual font file is typically no different from other files in an operating system, and is (for the most part) only bound by the limitations on legal names in that operating system. **However there is a pattern of font file naming that has become reasonably common, and that we recommend:**
+An individual font file name is typically no different from that of other files in an operating system, and is (for the most part) only bound by the limitations on legal names in that operating system. **However there is a pattern of font file naming that has become reasonably common, and that we recommend:**
 
 > FontFamilyName-StyleName.otf
 
@@ -53,6 +53,19 @@ and Anaconda Pro:
 - Anaconda Pro - Italic  _(designed as Anaconda Pro - Italic)_
 - Anaconda Pro - Bold  _(designed as Anaconda Pro - Bold)_
 - Anaconda Pro - Bold Italic  _(designed as Anaconda Pro - Bold Italic)_
+
+## About name strings stored in OpenType fonts
+Within the OpenType font file, the naming table (tag `name`) allows multilingual strings to be associated with the ‎font. These strings can represent copyright notices, font names, ‎family names, style names, feature names and values, etc.. Within the naming table, such strings are organized by Platform, Encoding, Language, and NameID. ‎
+
+### About platform-specific names
+In the early days of TrueType and OpenType, different operating systems needed different encodings for these strings. Apple operating systems needed names stored using "script manager" encodings, while Microsoft operating systems used UCS-2. In those days for a font to work on multiple platforms, each name (e.g., the _family name_ or _style name_) had to be included in the name table multiple times (once for each platform).
+
+While today's OpenType specification still permits inclusion of multiple platform-specific versions of each name, it is no longer necessary to do so, and they only serve to increase the size of the font file with no benefit.
+
+**We recommend that OpenType fonts do not include in the naming (`name`) table any strings with PlatformID values other than 3 (Windows).** All modern operating systems will use PlatformID 3 name strings when needed.
+
+### About language-specific names
+The naming table allows any given name (e.g., _family name_) may be provided in more than one language. However, **every naming (`name`) table entry should be provided in at least the English language.**
 
 ## References
 
