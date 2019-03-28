@@ -62,10 +62,13 @@ In the early days of TrueType and OpenType, different operating systems needed d
 
 While today's OpenType specification still permits inclusion of multiple platform-specific versions of each name, it is no longer necessary to do so, and they only serve to increase the size of the font file with no benefit.
 
-**We recommend that OpenType fonts do not include in the naming (`name`) table any strings with PlatformID values other than 3 (Windows).** All modern operating systems will use PlatformID 3 name strings when needed.
+Based on [this GitHub issue comment], for fonts that have a usable set of PlatformID 3 (Windows) names, **if _any_ PlatformID 1 (macOS) strings are provided then at least four such -- those with NameIDs 1, 2, 3 and 6 -- must be provided for the font to work on some at least some versions of macOS** (though this doesn't appear to be the case as of macOS 10.13.6). 
+
+**We recommend that OpenType fonts do not include in the naming (`name`) table any strings with PlatformID values other than 3 (Windows)** as all modern operating systems will use naming tables constructed in this way.
 
 ### About language-specific names
-The naming table allows any given name (e.g., _family name_) may be provided in more than one language. However, **every naming (`name`) table entry should be provided in at least the English language.**
+
+The naming table allows for any given name (e.g., _family name_) to be provided in more than one language. However, **every naming (`name`) table entry must be provided in at least the English language.**
 
 ## References
 
@@ -74,3 +77,4 @@ The naming table allows any given name (e.g., _family name_) may be provided in 
 [Ethnologue]: http://www.ethnologue.com/
 [namecheck.fontdata.com]: http://namecheck.fontdata.com
 [ScriptSource blog post regarding font naming recommendations]: http://scriptsource.org/cms/scripts/page.php?item_id=entry_detail&uid=k7dwx5fhnz
+[this GitHub issue comment]: https://github.com/fonttools/fonttools/issues/1170#issuecomment-368492829
