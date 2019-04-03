@@ -20,19 +20,21 @@ It is important, therefore, that font developers know how features are divided i
 - script-specific, and
 - not well documented.
 
-The most useful information is gleaned by reading the Harfbuzz code since (a) the code is opensource and thus accessible, and (b) Harfbuzz tries to be compatible with Microsoft's Uniscribe.
+The most useful information is gleaned by reading the Harfbuzz code[^1] since (a) the code is opensource and thus accessible, and (b) Harfbuzz tries to be compatible with Microsoft's Uniscribe.
 
 The following tables attempt to document what the Harfbuzz code indicates for GSUB execution. Each row represents a set of features, each feature identified by its 4-character tag.
 
 ||Default shaper|
 |---|---|
-|GSUB|ltra ltrm frac numr dnom ccmp locl rlig calt clig liga rclt _userfeatures_|
+|GSUB|rvrn|
+||ltra ltrm frac numr dnom rand ccmp locl rlig calt clig liga rclt _userfeatures_|
 |GPOS|mark mkmk curs kern|
 
 ||Arabic|Syriac|
 |---|---|---|
-|GSUB|rtla rtlm frac numr dnom|rtla rtlm frac numr dnom|
-|| |stch|
+|GSUB|rvrn|rvrn|
+||rtla rtlm frac numr dnom rand|rtla rtlm frac numr dnom rand|
+|||stch|
 ||ccmp locl|ccmp locl|
 ||isol|isol|
 ||fina|fina|
@@ -47,25 +49,26 @@ The following tables attempt to document what the Harfbuzz code indicates for GS
 ||_userfeatures_|_userfeatures_|
 |GPOS| mark mkmk curs kern| mark mkmk curs kern|
 
-||Indic|_notes_|
-|---|---|-|
-|GSUB|ltra ltrm frac numr dnom||
-||ccmp locl||
+||Indic|Khmer|
+|---|---|---|
+|GSUB|rvrn|rvrn|
+||ltra ltrm frac numr dnom rand|ltra ltrm frac numr dnom rand|
+||ccmp locl|ccmp locl|
 ||nukt||
 ||akhn||
 ||rphf||
 ||rkrf||
-||pref||
+||pref|pref blwf abvf|
 ||blwf||
 ||abvf||
 ||half||
 ||pstf||
 ||vatu||
 ||cjct||
-||cfar||
-||init pres abvs blws psts haln calt clig||
+|||cfar|
+||init pres abvs blws psts haln rlig calt clig rclt|pres abvs blws psts rlig calt clig rclt _userfeatures_|
 ||_userfeatures_||
-|GPOS|curs kern dist abvm blwm|kern not used in Khmer|
+|GPOS|curs kern dist abvm blwm|curs dist abvm blwm|
 
 where _userfeatures_ includes everything else that the user (or CSS) might have requested, such as dlig, ssxx, cvxx, smcp, onum, etc.
 
@@ -110,6 +113,9 @@ Note that only substitution type lookups are allowed in Stylistic Set and Charac
 ## Mark classes and filter sets
 
 (This section has not yet been written.)
+
+----
+[^1]: The Harfbuzz source is maintained [on Github](https://github.com/harfbuzz/harfbuzz/tree/master/src), and the pertinent information gleaned from the  `collect_features` methods of the various shaper modules (`hb-ot-shape.cc`, `hb-ot-shape-complex-arabic.cc`, `hb-ot-shape-complex-arabic.cc`, etc.)
 
 [OTinfo on SS]: http://scriptsource.org/cms/scripts/page.php?item_id=entry_detail&uid=kr5s6gwpdy
 
