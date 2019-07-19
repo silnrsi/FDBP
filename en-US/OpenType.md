@@ -28,7 +28,18 @@ The following tables attempt to document what the Harfbuzz code indicates for GS
 |---|---|
 |GSUB|rvrn|
 ||ltra ltrm frac numr dnom rand ccmp locl rlig calt clig liga rclt _userfeatures_|
-|GPOS|mark mkmk curs kern|
+|GPOS|mark mkmk curs kern _userfeatures_|
+
+||USE|
+|---|---|
+|GSUB|rvrn|
+|syllable analysis|ltra ltrm rtla rtlm frac numr dnom rand trak HARF
+||locl ccmp nukt akhn|
+||rphf|
+||pref|
+||rkrf abvr blwf half pstf vatu cjct|
+|insert dotted circles, reorder|isol init med final med2 fin2 fin3 BUZZ ccmp locl rlig calt clig liga rclt vert _userfeatures_|
+|GPOS|dist abvm blwm mark mkmk curs kern _userfeatures_|
 
 ||Arabic|Syriac|
 |---|---|---|
