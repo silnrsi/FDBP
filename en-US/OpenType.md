@@ -38,7 +38,8 @@ The following tables attempt to document what the Harfbuzz code indicates for GS
 ||rphf|
 ||pref|
 ||rkrf abvr blwf half pstf vatu cjct|
-|insert dotted circles, reorder|isol init med final med2 fin2 fin3 BUZZ ccmp locl rlig calt clig liga rclt vert _userfeatures_|
+|insert dotted circles, reorder|isol init med fina |
+||abvs blws haln pres psts BUZZ ccmp locl rlig calt clig liga rclt vert _userfeatures_|
 |GPOS|dist abvm blwm mark mkmk curs kern _userfeatures_|
 
 ||Arabic|Syriac|
