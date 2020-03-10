@@ -22,7 +22,7 @@ The second category (optional behavior) further subdivides into:
 - features whose behavior is defined by standards such as the OpenType specification, for example the *Discretionary Ligatures* (`dlig`) and *Petite Capitals From Capitals* (`c2pc`) features.
 - features whose behavior is defined entirely by the logic within the font. For Graphite this would be all features; for OpenType it would mean only the *Stylistic Set* (`ssxx`) and *Character Variant* (`cvxx`) features.
 
-If an application wants to provide a user interface for these optional behaviors, it needs human-readable (and preferably localizable) text giving the name of each feature and, in many cases, the names of the various values that feature can take on. We call this human-readable text data _User Interface Strings_, or **UI strings** for short.
+For an application to provide a user interface for these optional behaviors, it needs human-readable (and preferably localizable) text giving the name of each feature and, in many cases, the names of the various values that feature can take on. We call this human-readable text data _User Interface Strings_, or **UI strings** for short.
 
 For behaviors defined by a standard such as OpenType, suitable text for UI strings can easily obtained from the standard itself.
 
@@ -99,7 +99,7 @@ For OpenType, we can define the UI strings in two ways:
 1. via the FEA source files 
 2. using a separate utility program from FontUtils
 
-Method 1, defining them directly in FEA, is the most convenient. However, for fonts containing both Graphite and OpenType, neither the Graphite compiler nor existing FEA compilers are clever enough to re-use UI strings added to the font by the other, which means that such fonts will have two sets of UI Strings, slightly bloating the font size. Using Method 2 avoides this.
+Method 1, defining them directly in FEA, is the most convenient. However, for fonts containing both Graphite and OpenType, neither the Graphite compiler nor existing FEA compilers are clever enough to re-use UI strings added to the font by the other, which means that such fonts will have two sets of UI Strings, slightly bloating the font size. Using Method 2 avoids this.
 
 ### Method 1: Defining OpenType UI Strings in FEA
 
@@ -212,13 +212,13 @@ tffeatparms -c control.xml input.ttf output.ttf
 
 ## Application support
 
-Support for UI strings is a chicken-and-egg problem: not many fonts have the UI strings, so not many application vendors are motivated to add support, and since not many applications have support, few font vendors are motivated to add the strings.
+Support for UI strings is a chicken-or-egg problem: not many fonts have the UI strings, so not many application vendors are motivated to add support, and since not many applications have support, few font vendors are motivated to add the strings.
 
 Because UI strings have always been part of Graphite, some Graphite-enabled apps populate their UI with Graphite features. Here is an example screenshot from SIL FieldWorks suite showing that UI:
 
 ![Fieldworks font feature UI](images/UI-strings-in-use.png)
 
-As of this writing, the only applications we know about that supports UI strings for OpenType are some of Adobe's Creative Cloud suite (such as InDesign), but even those support only UI strings for Stylistic Sets. Most SIL fonts include UI strings, and SIL applications are planning to add support.
+As of this writing, the only applications we know about that support UI strings for OpenType are some of Adobe's Creative Cloud suite (such as InDesign), but even those support only UI strings for Stylistic Sets. Most SIL fonts include UI strings, and SIL applications are planning to add support.
 
 Please let us know if you become aware of other applications that support UI strings so we can include them here.
 
