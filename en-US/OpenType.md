@@ -57,8 +57,7 @@ The following tables attempt to document what the Harfbuzz code indicates for GS
 ||init|init|
 ||rlig|rlig|
 ||rclt calt|rclt calt|
-||mset rlig clig liga|mset rlig clig liga|
-||_userfeatures_|_userfeatures_|
+||mset rlig clig liga _userfeatures_|mset rlig clig liga _userfeatures_|
 |GPOS| mark mkmk curs kern| mark mkmk curs kern|
 
 ||Indic|Khmer|
