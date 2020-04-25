@@ -62,9 +62,9 @@ In the early days of TrueType and OpenType, different operating systems needed d
 
 While today's OpenType specification still permits inclusion of multiple platform-specific versions of each name, it is no longer necessary to do so, and they only serve to increase the size of the font file with no benefit.
 
-Based on [this GitHub issue comment], for fonts that have a usable set of PlatformID 3 (Windows) names, **if _any_ PlatformID 1 (macOS) strings are provided then at least four such -- those with NameIDs 1, 2, 3 and 6 -- must be provided for the font to work on some at least some versions of macOS** (though this doesn't appear to be the case as of macOS 10.13.6). 
+Based on [this GitHub issue comment], for fonts that have a usable set of PlatformID 3 (Windows) names, **if _any_ PlatformID 1 (macOS) strings are provided then at least four such -- those with NameIDs 1, 2, 3 and 6 -- must be provided for the font to work on some versions of macOS** (though this doesn't appear to be the case as of macOS 10.13.6). 
 
-**We recommend that OpenType fonts do not include in the naming (`name`) table any strings with PlatformID values other than 3 (Windows)** as all modern operating systems will use naming tables constructed in this way.
+**We recommend that OpenType fonts do not include in the naming (`name`) table, any strings with PlatformID values other than 3 (Windows)**, as all modern operating systems will use naming tables constructed in this way.
 
 ### About language-specific names
 
