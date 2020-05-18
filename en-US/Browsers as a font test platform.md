@@ -78,8 +78,11 @@ By default Chrome does not allow access to certain types of *local* files -- eve
 
 To override this behaviour you have to start Chrome with a particular command line option. To do this:
 
-* You must first stop *all* Chrome processes. So close all Chrome windows and any site-specific Chrome browser windows.
-* Launch Chrome with the `--allow-file-access-from-files` option.  For Windows you can set up a Chrome shortcut using:
+* You must first stop *all* Chrome processes. This includes:
+    * Close all Chrome windows
+    * Close any site-specific Chrome browser (a.k.a. Chrome shortcut) windows
+    * Stop any Chrome background tasks. NB: newer versions of Chrome default to keeping a background task running even after you have closed all Chrome windows. To change this, go to Chrome Settings then, in the System section, disable "Continue running background apps when Google Chrome is closed."
+* Launch Chrome with the `--allow-file-access-from-files` option.  For Windows you can set up a Windows shortcut to Chrome using:
     * Target: `"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-file-access-from-files`
     * Start in: `"C:\Program Files (x86)\Google\Chrome\Application"`
 
