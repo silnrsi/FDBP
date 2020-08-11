@@ -138,6 +138,10 @@ feature ss02 {
 feature cv01 {
   cvParameters {
     FeatUILabelNameID  { 
+      name 3 1 0x0409 "Name of the cv01 feature"   ; 
+      name 3 1 0x040C "Nom de la fonction cv01"    ; 
+    };
+    ParamUILabelNameID  { 
       name 3 1 0x0409 "First named param for cv01"           ; 
       name 3 1 0x040C "Premier paramètre nommé pour cv01"    ; 
     };
