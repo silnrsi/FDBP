@@ -105,7 +105,7 @@ According to the OpenType spec, Character Variants (cvxx tags) should be preferr
 - a lower case character and its small capital form
 - all characters that use a particular diacritic, where the diacritic has two forms
 
-Stylist Sets (ssxx tags) are preferred when systematically related changes affect more distinct characters. Examples include:
+Stylistic Sets (ssxx tags) are preferred when systematically related changes affect more distinct characters. Examples include:
 
 - 'barred b', 'barred d', and 'barred g' characters with different placements for the bar
 - 'a' and 'g' characters with literacy forms
