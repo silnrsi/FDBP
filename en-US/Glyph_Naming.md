@@ -13,7 +13,7 @@ title: Glyph Naming
 
 **Per the [Adobe Glyph List Specification \[AGL\]][AGL] specification, glyph names, whether working names or production names, should be no longer than 31 characters, must be entirely composed of characters from the following set: A–Z, a–z, 0–9, . (period, U+002E FULL STOP) and _ (underscore, U+005F LOW LINE), and must not start with a digit.** Note however that 
 - Adobe Font Development Kit \[AFDKO\] [Feature File Specification][FEA] allows name length up to 63 but requires that names, with the exception of `.notdef`, must not start with a digit or a period. 
-- [ISO/IEC 14496-22 "Open Font Format"][OFF] recommends that names, with the exception of `.notdef` and `.null`, must start with letter.
+- [ISO/IEC 14496-22 "Open Font Format"][OFF] recommends that names, with the exception of `.notdef` and `.null`, must start with a letter. This is not a strict requirement. For example, it is common for glyphs that are only used as components of composite glyphs to have names that start with an underscore, as in `_dot`.
 - Various font tools may have other restrictions but such are not derived from any official font specifications.
 
 **For glyphs that can end up in the final output of rendered text, the production glyph names should be selected from the [Adobe Glyph List for New Fonts \[AGLFN\]][AGLFN].**
