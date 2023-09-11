@@ -53,4 +53,4 @@ The following are known limitations that are due to be addressed in the future:
 * UFO 3 specific folders (data and images) are not copied
 * Converting from UFO 3 to UFO 2 only handles data that has a place in UFO 2, but does include converting UFO 3 anchors to the standard way of handling them in UFO 2
 
-There is further [documentation in github](https://github.com/silnrsi/pysilfont/blob/master/PysilfontUserDocs.pdf), although this is in need of updating and extending.
+There is further [documentation in GitHub](https://github.com/silnrsi/pysilfont/blob/master/docs/docs.md).

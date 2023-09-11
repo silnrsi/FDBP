@@ -85,11 +85,11 @@ Internal license information is stored in a font's `name` table alongside the co
 | in a UFO | Add _openTypeNameLicense_ and _openTypeNameLicenseURL_ keys to the `dict` |
 
 
-**For OFL projects `License URL` should be http://scripts.sil.org/ofl**
+**For OFL projects `License URL` should be http://scripts.sil.org/OFL**
 
 Technically, the Copyright field was intended to be used only for the copyright string and the License only for the license. However the OFL model includes the copyright with the license text. **We recommend that the internal License field should include both, as in (1) above.**
 
 **If you are creating WOFF versions of fonts, be sure that the copyright and license metadata in the WOFF 'wrapper' matches what is in the font.**
 
-[OFL]: http://scripts.sil.org/ofl
-[OFL-FAQ]: http://scripts.sil.org/cms/scripts/page.php?item_id=OFL-FAQ_web
+[OFL]: http://scripts.sil.org/OFL
+[OFL-FAQ]: http://scripts.sil.org/OFL-FAQ_web
