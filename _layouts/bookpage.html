@@ -14,7 +14,7 @@
 
               {% if p.path contains 'en-US' %}
 
-                {% if currentPost and p.title != {{site.title}} %}
+                {% if currentPost and p.title != site.title %}
                   <a class="prev" href="{{site.baseurl}}{{p.url}}">
                     <span>Prev</span>
                     <span><h3>{{p.title}}</h3></span>
@@ -39,7 +39,7 @@
 
               {% if p.path contains 'en-US' %}
 
-                {% if currentPost and p.title != {{site.title} %}
+                {% if currentPost and p.title != site.title %}
                   <a class="next" href="{{site.baseurl}}{{p.url}}">
                     <span>Next</span>
                     <span><h3>{{p.title}}</h3></span>
@@ -63,7 +63,7 @@
         <aside id="sidebar">
           <ol class="rectangle-list">
             {% for p in pageList %}
-              {% if p.path contains 'en-US' and p.title != {{site.title}} %}
+              {% if p.path contains 'en-US' and p.title != site.title %}
                 <li>
                   <span class="outlevel">
                     {{ p.outlevel }}
