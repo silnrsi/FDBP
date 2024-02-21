@@ -23,5 +23,5 @@ You may also need to consider alternate glyphs for special purposes, and create 
 
 If you don't want to draw all of these Latin glyphs yourself, and are making a font that will be released freely under the [SIL Open Font License](Copyright_and_Licensing.html), you can get the glyphs from some other OFL font as long as you acknowledge the source and follow the conditions of the OFL.
 
-[IWSc2]: http://scripts.sil.org/IWS-Chapter02
-[basicLatin]: http://scripts.sil.org/BasicCharSet
+[IWSc2]: https://scripts.sil.org/IWS-Chapter02
+[basicLatin]: https://github.com/silnrsi/pysilfont/blob/master/src/silfont/data/required_chars.csv
