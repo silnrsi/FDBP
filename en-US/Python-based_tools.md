@@ -19,8 +19,6 @@ Those available include:
 
 [Pysilfont](https://github.com/silnrsi/pysilfont) - a growing collection of tools for font development and building. See the section below for more information.
 
-[Robofab](https://github.com/robofab-developers/robofab) - a Python library with objects that deal with data usually associated with fonts and type design. RoboFab supports the UFO font format and also FontLab.
-
 [Fontforge](https://fontforge.github.io/en-US) - as well as being a font editor, FontForge comes with a python object library that can work with FontForge’s own format (.sfd), as well as with UFOs and ttf files.
 
 All of the above are open-source projects.
