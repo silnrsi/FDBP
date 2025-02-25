@@ -22,7 +22,7 @@ It is important, therefore, that font developers know how features are divided i
 
 The most useful information is gleaned by reading the Harfbuzz code[^1] since (a) the code is opensource and thus accessible, and (b) Harfbuzz tries to be compatible with Microsoft's Uniscribe.
 
-The following tables attempt to document what the Harfbuzz code indicates for GSUB execution. Each row represents a set of features, each feature identified by its 4-character tag. All the lookups in the list of features in a row a processed teogether in lookup order.
+The following tables attempt to document what the Harfbuzz code indicates for GSUB execution. Each row represents a set of features, each feature identified by its 4-character tag. All the lookups in the list of features in a row a processed together in lookup order.
 
 ||Default shaper|
 |---|---|
@@ -30,7 +30,7 @@ The following tables attempt to document what the Harfbuzz code indicates for GS
 ||ltra ltrm frac numr dnom rand ccmp locl rlig calt clig liga rclt _userfeatures_|
 |GPOS|mark mkmk curs kern _userfeatures_|
 
-||USE|
+||USE shaper|
 |---|---|
 |GSUB|rvrn|
 |syllable analysis|ltra ltrm rtla rtlm frac numr dnom rand trak HARF
@@ -42,7 +42,7 @@ The following tables attempt to document what the Harfbuzz code indicates for GS
 ||abvs blws haln pres psts BUZZ ccmp locl rlig calt clig liga rclt vert _userfeatures_|
 |GPOS|dist abvm blwm mark mkmk curs kern _userfeatures_|
 
-||Arabic
+||Arabic shaper (including Arabic, Mongolian, N'Ko, Syriac, and several other connected or cursive scripts.)
 |---|---|
 |GSUB|rvrn|
 ||rtla rtlm frac numr dnom rand|
@@ -50,15 +50,15 @@ The following tables attempt to document what the Harfbuzz code indicates for GS
 ||ccmp locl|
 ||isol|
 ||fina|
-||fin2|
-||fin3|
+||fin2    (Syriac only)|
+||fin3    (Syriac only)|
 ||medi|
-||med2|
+||med2    (Syriac only)|
 ||init|
 ||rlig|
 ||rclt calt|
 ||mset clig liga _userfeatures_|
-|GPOS| mark mkmk curs kern|
+|GPOS|mark mkmk curs kern|
 
 ||Indic|Khmer|
 |---|---|---|
