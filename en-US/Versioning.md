@@ -64,7 +64,7 @@ Font vendors have been inconsistent in how they encode a font version in such a 
 | 1 | 296 | 0x00014BC6 | Version 1.296 beta2 |
 | 1 | 300 | 0x00014CCC | Version 1.300 |
 | 2 | 101 | 0x000219DB | Version 2.101 build 693 |
-| 3 | 560 | 0x00038F5C | Version 2.560 20170329-1 |
+| 3 | 560 | 0x00038F5C | Version 3.560 20170329-1 |
 | 6 | 101 | 0x000619DB | Version 6.101 FW bundle |
 
 ## Development versions
