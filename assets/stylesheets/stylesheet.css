@@ -123,9 +123,11 @@ header h2 {
 }
 
 .notice {
+  padding-top: 5px;
+  padding-bottom: 5px;
   background: #ffcf7d;
   border-bottom: solid 1px #cfa255;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-style: italic;
   text-align: center;
   font-family: 'Merriweather', serif;
