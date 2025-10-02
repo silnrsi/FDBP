@@ -1,6 +1,9 @@
 # FDBP
 Font Development Best Practice documentation
 
+> [!NOTE]
+> This website is no longer being updated. Revised and improved information can be found in the Fonts topic at [Writing Systems Technical Reference][wstr].
+
 ## General Info
 - The anticipated content of the book can be found in the https://github.com/silnrsi/FDBP/blob/gh-pages/en-US-weightlist.md document.
 - Each page is written in GitHub Flavored Markdown (GFM) and begins with Jekyll front matter which specifies the title, category, weight (page sort order), outline level (similar to the weight, but showing the hierarchy), published status, and layout (page template - bookpage is currently used by all pages).
@@ -52,3 +55,4 @@ We gratefully acknowledge this site is modeled on [Design With FontForge] on [Gi
 [GitHub]: https://github.com/fontforge/designwithfontforge.com
 [Easily install Jekyll on Windows]: https://davidburela.wordpress.com/2015/11/28/easily-install-jekyll-on-windows-with-3-command-prompt-entries-and-chocolatey/
 [Geany]: https://www.geany.org/
+[wstr]: https://writingsystems.info

@@ -122,6 +122,15 @@ header h2 {
   text-transform: capitalize;
 }
 
+header .notice {
+  background: #ffcf7d;
+  border-bottom: solid 1px #cfa255;
+  font-size: 1.4em;
+  font-style: italic;
+  text-align: center;
+  color: #333
+}
+
 .inner {
   position: relative;
   width: 940px;
