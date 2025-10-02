@@ -2,7 +2,7 @@
 Font Development Best Practice documentation
 
 > [!NOTE]
-> This website is no longer being updated. Revised and improved information can be found in the Fonts topic at [Writing Systems Technical Reference][wstr].
+> This website is no longer being updated. Revised and improved information can be found in the Fonts topic at [Writing Systems Technical Resources][wstr].
 
 ## General Info
 - The anticipated content of the book can be found in the https://github.com/silnrsi/FDBP/blob/gh-pages/en-US-weightlist.md document.
